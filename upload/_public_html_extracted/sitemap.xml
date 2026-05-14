@@ -1,14 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ========================================== -->
+  <!-- HOME / MAIN RESULTS PAGE (Primary URL)     -->
+  <!-- ========================================== -->
   <url>
     <loc>https://lottong-pinoy.com/</loc>
-    <lastmod>2024-05-21</lastmod>
+    <lastmod>2025-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lottong-pinoy.com/"/>
+    <xhtml:link rel="alternate" hreflang="fil" href="https://lottong-pinoy.com/"/>
   </url>
-  <!-- 
-       REMOVED: All /results/ links. 
-       Reason: These pages do not exist in your code. 
-       Keeping them will cause 404 errors.
-  -->
+
+  <!-- ========================================== -->
+  <!-- SPA SECTIONS (Hash-based navigation)       -->
+  <!-- Google can index hash fragments for SPA     -->
+  <!-- ========================================== -->
+
+  <!-- Latest Results -->
+  <url>
+    <loc>https://lottong-pinoy.com/#results</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Draw History -->
+  <url>
+    <loc>https://lottong-pinoy.com/#history</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Lucky Number Generator -->
+  <url>
+    <loc>https://lottong-pinoy.com/#generator</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Number Checker -->
+  <url>
+    <loc>https://lottong-pinoy.com/#checker</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Analysis -->
+  <url>
+    <loc>https://lottong-pinoy.com/#analysis</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Prize Calculator -->
+  <url>
+    <loc>https://lottong-pinoy.com/#calculator</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ========================================== -->
+  <!-- INFORMATIONAL PAGES                        -->
+  <!-- ========================================== -->
+
+  <!-- About -->
+  <url>
+    <loc>https://lottong-pinoy.com/#about</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://lottong-pinoy.com/#contact</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://lottong-pinoy.com/#privacy</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Draw Schedule -->
+  <url>
+    <loc>https://lottong-pinoy.com/#schedule</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- How to Claim -->
+  <url>
+    <loc>https://lottong-pinoy.com/#claim</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://lottong-pinoy.com/#faq</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://lottong-pinoy.com/#blog</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Alaga -->
+  <url>
+    <loc>https://lottong-pinoy.com/#alaga</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
