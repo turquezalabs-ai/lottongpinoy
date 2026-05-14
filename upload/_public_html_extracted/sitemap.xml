@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://lottong-pinoy.com/</loc>
+    <lastmod>2024-05-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- 
+       REMOVED: All /results/ links. 
+       Reason: These pages do not exist in your code. 
+       Keeping them will cause 404 errors.
+  -->
+</urlset>

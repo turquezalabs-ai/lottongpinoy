@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lottong-pinoy.com/sitemap.xml
+
+# Adsense Bot
+User-agent: Mediapartners-Google
+Allow: /

@@ -1,0 +1,37 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1777358213579,
+    "data": [
+        {
+            "type": "file",
+            "name": "partial_winners.json",
+            "size": 28116,
+            "hash": "8d03a9d324cd0533802577391a9b4923037a463131b868d2ca187b9378efa644"
+        },
+        {
+            "type": "file",
+            "name": "partial_winners_history.json",
+            "size": 812886,
+            "hash": "34c849dded44b0a9a3fdde20fb09c589be5330c2079935ea7e43d02692850668"
+        },
+        {
+            "type": "file",
+            "name": "prizes.json",
+            "size": 305,
+            "hash": "685fe4479f713fd9ccdc344efad64a06877cda1d27960528365e08870ec969f2"
+        },
+        {
+            "type": "file",
+            "name": "results.json",
+            "size": 4589124,
+            "hash": "e993c8b6d54cbfe08c62c0d952c334da6c04c15339efe7c316a63f74e0b7e48a"
+        },
+        {
+            "type": "file",
+            "name": "results_temp_2d_3d.json",
+            "size": 830,
+            "hash": "a53deb157d84691edc813c98e52d8885db81169ca0a487d44ae7b53bfc8a2c8c"
+        }
+    ]
+}
