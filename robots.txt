@@ -1,0 +1,62 @@
+# robots.txt for Lottong Pinoy (lottong-pinoy.com)
+# Last updated: 2025
+
+# ==========================================
+# DEFAULT CRAWLER RULES
+# ==========================================
+User-agent: *
+Allow: /
+Disallow: /staging/
+Disallow: /cache_*
+Disallow: /clear-cache.php
+Disallow: /test.php
+Disallow: /default.php
+
+# ==========================================
+# SITEMAP
+# ==========================================
+Sitemap: https://lottong-pinoy.com/sitemap.xml
+
+# ==========================================
+# GOOGLE ADSENSE BOT
+# ==========================================
+User-agent: Mediapartners-Google
+Allow: /
+
+# ==========================================
+# GOOGLE ADSBOT
+# ==========================================
+User-agent: AdsBot-Google
+Allow: /
+
+# ==========================================
+# GOOGLEBOT (Enhanced crawling)
+# ==========================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# ==========================================
+# BINGBOT
+# ==========================================
+User-agent: bingbot
+Allow: /
+Crawl-delay: 2
+
+# ==========================================
+# BLOCK MALICIOUS BOTS
+# ==========================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /

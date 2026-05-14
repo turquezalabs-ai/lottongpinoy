@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJGNHWLX22"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DJGNHWLX22');
+</script>
+    <!-- SEO META TAGS -->
+    <title>Lottong Pinoy - PCSO Lotto Results & Analysis</title>
+    <meta name="description" content="Check the latest PCSO lotto results for 6/58, 6/55, 6/49, 6/45, 6/42, 3D, 2D, and 4D. Live updates, winning numbers analysis, and lucky number generator.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lottong-pinoy.com/" />
+    <!-- OPEN GRAPH (Social Media Preview) -->
+    <meta property="og:title" content="Lottong Pinoy - PCSO Lotto Results">
+    <meta property="og:description" content="Real-time PCSO lotto results, analytics, and generator.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lottong-pinoy.com/">
+    <meta property="og:image" content="https://lottong-pinoy.com/img/og-image.jpg">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=1">
+    <!-- STYLES & SCRIPTS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- GOOGLE ADSENSE -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8747017339704776" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative">
+        <!-- Header -->
+        <header class="flex w-full justify-between items-center mb-4">
+            <div>
+                <h1 class="font-display text-3xl md:text-4xl tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">
+                    Lottong Pinoy
+                </h1>
+                <p class="text-slate-400 text-md mt-1">PCSO Results & Analysis Portal</p>
+            </div>
+            <!-- Desktop Status & Mobile Menu Button -->
+            <div class="flex items-center gap-4">
+                <!-- Mobile Menu Button (Hamburger) -->
+                <button id="menuBtn" class="md:hidden text-slate-400 hover:text-white focus:outline-none z-50">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <!-- Status Indicator (Desktop) -->
+                <div id="status" class="hidden md:flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-sky-500/10 text-sky-400">
+                    <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                    <span id="statusText">Connecting...</span>
+                </div>
+            </div>
+        </header>
+        <!-- Mobile Status (Below Header) -->
+        <div class="md:hidden mb-4 flex justify-start">
+            <div id="statusMobile" class="flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-sky-500/10 text-sky-400">
+                <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                <span id="statusTextMobile">Connecting...</span>
+            </div>
+        </div>
+        <!-- Navigation (Hamburger Logic) -->
+        <nav id="mainNav" class="mb-8 border-b border-slate-700 hidden md:block">
+            <ul class="flex flex-col md:flex-row gap-y-2 gap-x-1 -mb-px text-md font-medium">
+                <li><button class="nav-tab active w-full text-left md:text-center" data-tab="results">Results</button></li>
+                <li><button class="nav-tab w-full text-left md:text-center" data-tab="history">Draw History</button></li>
+                <li><button class="nav-tab w-full text-left md:text-center" data-tab="generator">Lucky Generator</button></li>
+                <li><button class="nav-tab w-full text-left md:text-center" data-tab="checker">Number Checker</button></li>
+                <li><button class="nav-tab w-full text-left md:text-center" data-tab="analysis">Analysis</button></li>
+            </ul>
+        </nav>
+        <!-- AD BANNER: TOP -->
+        <div class="ad-container mb-6">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8747017339704776" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        <!-- ========================================== -->
+        <!-- SECTION 1: RESULTS -->
+        <!-- ========================================== -->
+        <section id="section-results" class="section-page">
+            <div class="mb-8">
+                <div class="flex justify-between items-end mb-4">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-semibold text-white mt-3">Latest Draw Results</h2>
+                    </div>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-sky-400 my-5 uppercase tracking-wider">Major Games</h3>
+                <div id="latestGridMajor" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 mb-8"></div>
+                <h3 class="text-lg md:text-xl font-bold text-sky-400 my-5 uppercase tracking-wider">Digit Games</h3>
+                <div id="latestGridDigit" class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4"></div>
+            </div>
+        </section>
+        <!-- ========================================== -->
+        <!-- SECTION 2: DRAW HISTORY -->
+        <!-- ========================================== -->
+        <section id="section-history" class="section-page hidden">
+            <div class="mb-6">
+                <h2 class="text-xl md:text-2xl font-semibold text-white mt-3">Draw History</h2>
+                <p class="text-slate-400 text-md mt-1">Search and filter past winning numbers.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- FILTER (Order 1 on Mobile and Desktop) -->
+                <aside class="lg:col-span-1 order-1">
+                    <div class="panel sticky top-8">
+                        <h3 class="font-display text-sm text-sky-400 mb-6 tracking-widest">FILTER</h3>
+                        <div class="space-y-5">
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">Game Type</label>
+                                <select id="gameSelect" class="select">
+                                    <option value="all">All Games</option>
+                                    <option value="6/58">Ultra Lotto 6/58</option>
+                                    <option value="6/55">Grand Lotto 6/55</option>
+                                    <option value="6/49">Super Lotto 6/49</option>
+                                    <option value="6/45">Mega Lotto 6/45</option>
+                                    <option value="6/42">Lotto 6/42</option>
+                                    <option value="6D">6D Lotto</option>
+                                    <option value="4D">4D Lotto</option>
+                                    <option value="3D">3D Lotto</option>
+                                    <option value="2D">2D Lotto</option>
+                                </select>
+                            </div>
+                            <div id="scheduleContainer" class="hidden">
+                                <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">Schedule</label>
+                                <select id="scheduleSelect" class="select">
+                                    <option value="all">All Schedules</option>
+                                    <option value="11AM">11:00 AM</option>
+                                    <option value="4PM">4:00 PM</option>
+                                    <option value="9PM">9:00 PM</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">Draw Date</label>
+                                <div class="grid grid-cols-1 gap-2">
+                                    <div>
+                                        <label class="block text-[10px] text-slate-500 mb-1">From</label>
+                                        <input type="date" id="startDate" class="input">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[10px] text-slate-500 mb-1">To</label>
+                                        <input type="date" id="endDate" class="input">
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="searchBtn" class="btn btn-primary w-full">Apply Filter</button>
+                        </div>
+                        <!-- AD BANNER: SIDEBAR -->
+                        <div class="ad-container mt-8 hidden lg:block">
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8747017339704776" data-ad-slot="0987654321" data-ad-format="vertical" data-full-width-responsive="true"></ins>
+                            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-700 space-y-3">
+                            <h4 class="text-xs text-slate-400 uppercase tracking-wide mb-3">Quick Stats</h4>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-400">Total Draws</span>
+                                <span id="statDraws" class="text-white font-bold">0</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-400">Total Winners</span>
+                                <span id="statWinners" class="text-white font-bold">0</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-400">Total Prize</span>
+                                <span id="statPrize" class="text-white font-bold">P 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- RESULTS (Order 2 on Mobile and Desktop) -->
+                <main class="lg:col-span-3 order-2">
+                    <div class="panel min-h-[400px]">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                            <h3 class="text-lg font-bold text-white">Filter Result</h3>
+                            <span id="resultCountBadge" class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">0 results</span>
+                        </div>
+                        <div id="loading" class="hidden flex-col items-center justify-center h-64">
+                            <div class="w-10 h-10 border-4 border-sky-500 border-t-transparent rounded-full animate-spin mb-4"></div>
+                            <p class="text-slate-400 text-sm">Fetching history...</p>
+                        </div>
+                        <div id="tableArea">
+                            <div id="emptyState" class="text-center py-12">
+                                <svg class="w-16 h-16 mx-auto text-slate-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+                                </svg>
+                                <p class="text-slate-400 text-lg">Select a filter and click "Apply Filter"</p>
+                            </div>
+                            <div id="resultsContainer" class="hidden">
+                                <div class="overflow-x-auto">
+                                    <table class="w-full">
+                                        <thead>
+                                            <tr class="border-b border-slate-700">
+                                                <th class="text-left text-xs text-slate-400 p-2 w-24">Draw Date</th>
+                                                <th class="text-left text-xs text-slate-400 p-2 w-28">Game</th>
+                                                <th class="text-left text-xs text-slate-400 p-2 hidden sm:table-cell w-16">Time</th>
+                                                <th class="text-left text-xs text-slate-400 p-2">Winning Numbers</th>
+                                                <th class="text-right text-xs text-slate-400 p-2 w-32">Prize</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tableBody"></tbody>
+                                    </table>
+                                </div>
+                                <div class="flex flex-col sm:flex-row justify-between items-center mt-8 pt-6 border-t border-slate-700 gap-4">
+                                    <button id="prevBtn" class="btn btn-outline text-xs px-4 py-2 w-full sm:w-auto">← Previous</button>
+                                    <div class="flex items-center gap-2 text-sm text-slate-400">
+                                        <span>Page</span>
+                                        <input type="number" id="gotoPageInput" class="w-12 bg-slate-800 border border-slate-600 rounded text-center text-xs py-1" min="1" value="1">
+                                        <span>of <span id="totalPagesSpan">1</span></span>
+                                        <button id="gotoPageBtn" class="btn btn-outline text-xs px-2 py-1">Go</button>
+                                    </div>
+                                    <button id="nextBtn" class="btn btn-outline text-xs px-4 py-2 w-full sm:w-auto">Next →</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!-- ========================================== -->
+        <!-- SECTION 3: LUCKY GENERATOR -->
+        <!-- ========================================== -->
+        <section id="section-generator" class="section-page hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-bold text-white mb-2">Your Lucky Number</h2>
+                        <p class="text-slate-400 text-sm">Generate statistically suggested combinations.</p>
+                    </div>
+                    <div class="panel">
+                        <div class="mb-6">
+                            <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">Method</label>
+                            <div class="flex flex-wrap gap-4 items-center">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="genMethod" value="normal" checked class="w-4 h-4 accent-sky-500 cursor-pointer">
+                                    <span class="text-sm text-slate-300 group-hover:text-white">Normal</span>
+                                </label>
+                                <div class="flex items-center gap-2">
+                                    <label class="flex items-center gap-2 cursor-pointer group">
+                                        <input type="radio" name="genMethod" value="system" class="w-4 h-4 accent-sky-500 cursor-pointer">
+                                        <span class="text-sm text-slate-300 group-hover:text-white">System Play</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="systemPicksContainer" class="hidden mb-6 animate-fade-in">
+                            <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">Picks</label>
+                            <select id="systemPicksSelect" class="select">
+                                <option value="7">System 7</option>
+                                <option value="8">System 8</option>
+                                <option value="9">System 9</option>
+                                <option value="10">System 10</option>
+                                <option value="11">System 11</option>
+                                <option value="12">System 12</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2">Select Game</label>
+                                <select id="genGameSelect" class="select">
+                                    <option value="6/58">Ultra Lotto 6/58</option>
+                                    <option value="6/55">Grand Lotto 6/55</option>
+                                    <option value="6/49">Super Lotto 6/49</option>
+                                    <option value="6/45">Mega Lotto 6/45</option>
+                                    <option value="6/42">Lotto 6/42</option>
+                                    <option value="6D">6D Lotto</option>
+                                    <option value="4D">4D Lotto</option>
+                                    <option value="3D">3D Lotto</option>
+                                    <option value="2D">2D Lotto</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2">Strategy</label>
+                                <select id="genStrategySelect" class="select">
+                                    <option value="60">Possible (60%)</option>
+                                    <option value="70">Probable (70%)</option>
+                                    <option value="80">Assumed (80%)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="generateBtn" class="btn btn-primary w-full py-4 text-base md:text-lg mb-6">🎲 Generate Numbers</button>
+                        <div class="bg-black/20 p-4 md:p-6 rounded-lg text-center min-h-[80px] flex items-center justify-center">
+                            <div id="genOutput" class="flex gap-2 flex-wrap justify-center"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-bold text-white">Saved Combinations</h3>
+                        <button id="clearGenHistory" class="text-xs text-red-400 hover:text-red-300 px-3 py-1 rounded border border-slate-700">Clear All</button>
+                    </div>
+                    <div id="printArea" class="panel min-h-[300px] overflow-y-auto">
+                        <div id="printHeader" class="hidden text-center border-b border-slate-700 pb-4 mb-4">
+                            <h1 class="text-xl font-bold text-white">Lucky Numbers Collection</h1>
+                            <p class="text-xs text-slate-500 mt-1">Generated on: <span id="printTimestamp"></span></p>
+                        </div>
+                        <div id="genHistoryList" class="saved-grid">
+                            <p class="text-slate-500 text-sm text-center py-8 col-span-2">No generated numbers saved yet.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 no-print">
+                        <button id="exportTxtBtn" class="btn btn-outline flex-1">Save as Text</button>
+                        <button id="printBtn" class="btn btn-outline flex-1">Print</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================================== -->
+        <!-- SECTION 4: NUMBER CHECKER -->
+        <!-- ========================================== -->
+        <section id="section-checker" class="section-page hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-xl md:text-2xl font-bold text-white mb-2">Number Checker</h2>
+                    <p class="text-slate-400 mb-4">Select your numbers to check for past prizes.</p>
+                    <div class="panel mb-4">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+                            <select id="checkGameSelect" class="select w-full sm:w-auto">
+                                <option value="6/42">Lotto 6/42</option>
+                                <option value="6/45">Mega Lotto 6/45</option>
+                                <option value="6/49">Super Lotto 6/49</option>
+                                <option value="6/55">Grand Lotto 6/55</option>
+                                <option value="6/58">Ultra Lotto 6/58</option>
+                                <option value="6D">6D Lotto</option>
+                                <option value="4D">4D Lotto</option>
+                                <option value="3D">3D Lotto</option>
+                                <option value="2D">2D Lotto</option>
+                            </select>
+                            <button id="clearSelection" class="text-xs text-sky-400 hover:text-sky-300 mt-2 sm:mt-0">Clear</button>
+                        </div>
+                        <div id="numberGrid" class="number-grid"></div>
+                        <div class="mt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+                            <div id="selectedCountBadge" class="text-xs text-slate-400">Selected: 0/6</div>
+                            <button id="checkNowBtn" class="btn btn-primary px-6 py-2 w-full sm:w-auto" disabled>Check History</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Prize History</h3>
+                    <p class="text-slate-400 mb-4">Check if your favorite numbers have won.</p>
+                    <div id="checkResults" class="panel min-h-[300px] overflow-y-auto">
+                        <p class="text-slate-500 text-md text-center py-8">Select numbers to see results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================================== -->
+        <!-- SECTION 5: ANALYSIS -->
+        <!-- ========================================== -->
+        <section id="section-analysis" class="section-page hidden">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-8">
+                    <h2 class="text-xl md:text-2xl font-bold text-white mb-2">Analysis</h2>
+                    <p class="text-slate-400 text-sm">Interprets the data to give users actionable insights.</p>
+                </div>
+                <div class="panel mb-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
+                        <div class="sm:col-span-2 lg:col-span-2">
+                            <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">Select Game</label>
+                            <select id="analysisGameSelect" class="select">
+                                <option value="6/58">Ultra Lotto 6/58</option>
+                                <option value="6/55">Grand Lotto 6/55</option>
+                                <option value="6/49">Super Lotto 6/49</option>
+                                <option value="6/45">Mega Lotto 6/45</option>
+                                <option value="6/42">Lotto 6/42</option>
+                                <option value="6D">6D Lotto</option>
+                                <option value="4D">4D Lotto</option>
+                                <option value="3D">3D Lotto</option>
+                                <option value="2D">2D Lotto</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">From Date</label>
+                            <input type="date" id="analysisStartDate" class="input">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">To Date</label>
+                            <input type="date" id="analysisEndDate" class="input">
+                        </div>
+                        <div>
+                            <button id="analyzeBtn" class="btn btn-primary w-full">Generate</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="analysisResultsContainer" class="hidden space-y-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="panel">
+                            <h3 class="font-bold text-red-400 mb-4">🔥 Hot Numbers</h3>
+                            <div id="hotNumbers" class="space-y-2"></div>
+                        </div>
+                        <div class="panel">
+                            <h3 class="font-bold text-blue-400 mb-4">❄️ Cold Numbers</h3>
+                            <div id="coldNumbers" class="space-y-2"></div>
+                        </div>
+                        <div class="panel">
+                            <h3 class="font-bold text-sky-400 mb-4">🔗 Frequent Pairs</h3>
+                            <div id="pairsContainer" class="space-y-2"></div>
+                        </div>
+                        <div class="panel">
+                            <h3 class="font-bold text-purple-400 mb-4">🔺 Frequent Trios</h3>
+                            <div id="triosContainer" class="space-y-2"></div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h3 class="text-lg font-bold text-white mb-4">Frequency Distribution</h3>
+                        <div class="relative h-64 md:h-80">
+                            <canvas id="analysisChart"></canvas>
+                            <div id="chartTooltip" class="absolute hidden bg-slate-900 border p-2 text-xs rounded">
+                                <div class="text-slate-400">Number</div>
+                                <div class="text-sm font-bold text-white" id="tooltipContent">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="analysisEmptyState" class="panel text-center py-12">
+                    <svg class="w-16 h-16 mx-auto text-slate-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                    <p class="text-slate-400 text-lg">Select filters and click "Generate Analysis"</p>
+                </div>
+            </div>
+        </section>
+        <!-- AD BANNER: BOTTOM -->
+        <div class="ad-container mt-12">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8747017339704776" data-ad-slot="1122334455" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="mt-12 border-t border-slate-800 bg-slate-900/50 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- Column 1: Brand -->
+                <div>
+                    <h3 class="font-display text-lg text-sky-400 mb-2">Lottong Pinoy</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">
+                        Providing accurate lotto results and statistical analysis for the Filipino community.
+                    </p>
+                </div>
+                <!-- Column 2: Links -->
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-3 uppercase tracking-wider">Important Links</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="https://www.pcso.gov.ph/" target="_blank" class="hover:text-sky-400 transition-colors">Official PCSO Website</a></li>
+                        <li><a href="https://www.pcso.gov.ph/lotto-search/pcso-lotto-draw-schedule.aspx" target="_blank" class="hover:text-sky-400 transition-colors">Draw Schedule</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Disclaimer -->
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-3 uppercase tracking-wider">Disclaimer</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">
+                        This is an <strong>independent</strong> application for informational purposes only. We are not affiliated with PCSO. Please verify all winning numbers on the official PCSO website.
+                    </p>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+                <p>© <span id="currentYear"></span> Lottong Pinoy. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Built with ❤️ for the Filipino People</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

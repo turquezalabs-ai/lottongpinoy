@@ -1,0 +1,390 @@
+/* css/styles.css */
+
+:root {
+    --bg: #020617;
+    --bg-card: #0f172a;
+    --accent: #38bdf8;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border: #1e293b;
+}
+
+/* Force Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    /* MOVE overflow-x HERE. This allows sticky to work inside children. */
+    overflow-x: hidden;
+}
+
+.font-display {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Layout Wrapper */
+.main-wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* REMOVED overflow-x: hidden from here. */
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .main-wrapper {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+
+/* ========================================== */
+/* STICKY HEADER (CSS FALLBACK) */
+/* ========================================== */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    /* Fallback background if Tailwind fails */
+    background-color: rgba(2, 6, 23, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Mobile specific stretching for sticky header */
+@media (max-width: 767px) {
+    .sticky-header {
+        /* Stretch to edges */
+        margin-left: -1rem;
+        margin-right: -1rem;
+        width: calc(100% + 2rem);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-bottom: 1px solid #1e293b;
+    }
+}
+
+/* Desktop overrides */
+@media (min-width: 768px) {
+    .sticky-header {
+        position: relative;
+        /* Static on desktop */
+        background-color: transparent;
+        backdrop-filter: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+/* Panel Styles */
+.panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+/* Section Visibility */
+.section-page {
+    display: block;
+    width: 100%;
+}
+
+.section-page.hidden {
+    display: none;
+}
+
+/* Navigation */
+.nav-tab {
+    padding: 0.75rem 1.25rem;
+    color: var(--text-muted);
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.nav-tab:hover {
+    color: var(--text);
+}
+
+.nav-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+/* Forms */
+.select,
+.input {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 0.65rem 0.75rem;
+    color: var(--text);
+    width: 100%;
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.select:focus,
+.input:focus {
+    border-color: var(--accent);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.65rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    border: none;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent), #0ea5e9);
+    color: #020617;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.btn-outline:hover {
+    border-color: var(--text);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Checker Number Grid */
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .number-grid {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+.num-ball {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    transition: all 0.15s ease;
+}
+
+.num-ball:hover {
+    border-color: var(--accent);
+}
+
+.num-ball.selected {
+    background: #eab308;
+    color: #422006;
+    border-color: #facc15;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(234, 179, 8, 0.5);
+}
+
+/* Footer & Misc */
+.footer-link {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--accent);
+}
+
+/* PWA & Cookie Banners */
+#cookieBanner {
+    transform: translateY(100%);
+    /* Hidden by default (off screen) */
+    /* Ensure transition is smooth */
+    transition: transform 0.5s ease-out;
+}
+
+/* Class to show the banner */
+#cookieBanner.show {
+    transform: translateY(0);
+}
+
+#installBanner.hidden {
+    display: none;
+}
+
+/* Print Styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #printArea,
+    #printArea * {
+        visibility: visible;
+    }
+
+    #printArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white;
+        color: black;
+        border: none;
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    #printArea .text-white,
+    #printArea .text-slate-300 {
+        color: black !important;
+    }
+}
+
+/* Grid Fallbacks */
+#latestGridMajor {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (max-width: 360px) {
+    #latestGridMajor {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    #latestGridMajor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #latestGridMajor {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+#latestGridDigit {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #latestGridDigit {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* FIX: Force Navigation on Top */
+header,
+nav {
+    position: relative;
+    z-index: 50;
+    /* Stays on top */
+}
+
+/* Ensure sections don't cover the nav */
+.section-page {
+    position: relative;
+    z-index: 10;
+    /* Stays below nav */
+}
+
+/* Mobile Bottom Nav - Force to top */
+.fixed.bottom-0 {
+    z-index: 999 !important;
+}
+
+/* Add space at the bottom for Mobile Nav */
+body {
+    padding-bottom: 80px;
+    /* Height of the bottom nav + buffer */
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 0;
+        /* Remove padding on desktop */
+    }
+}
+/* ==========================================
+   Z-INDEX LAYERING SYSTEM
+   ========================================== */
+
+/* 1. HEADER: Highest Priority */
+header {
+    z-index: 100 !important; 
+}
+
+/* 2. MOBILE NAV (Inside Header): Must be higher than header */
+#mainNav {
+    z-index: 110 !important;
+}
+
+/* 3. PAGE CONTENT: Lower Priority */
+.section-page {
+    position: relative;
+    z-index: 10; 
+}
+
+/* 4. FOOTER & BANNERS: Middle Ground */
+#cookieBanner, .fixed.bottom-0 {
+    z-index: 90 !important;
+}
+
+/* 5. MODALS: Highest */
+#insightModal {
+    z-index: 9999 !important;
+}

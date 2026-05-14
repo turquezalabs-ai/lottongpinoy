@@ -1,0 +1,30 @@
+# Lottong Pinoy - .gitignore
+
+# Cache files
+cache_*.json
+*.cache
+
+# Staging directory (old duplicate)
+staging/
+
+# Data files (regenerated from API)
+data/debug.html
+data/debug_view.html
+
+# Temp/test files
+test.php
+default.php
+results.json
+prizes.json
+partial_winners*.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Server-specific
+.htaccess.bak

@@ -1,0 +1,37 @@
+RewriteEngine On
+
+# ==========================================
+# REDIRECT OLD SITEMAP URLS
+# ==========================================
+
+# 1. Redirect all /results/ pages to Homepage
+RewriteRule ^results/([0-9a-z-]+)$ /? [R=301,L]
+
+# 2. Redirect utility pages
+RewriteRule ^about$ /? [R=301,L]
+RewriteRule ^history$ /? [R=301,L]
+# NOTE: Analytics line removed so you can view your stats!
+
+# ==========================================
+# SECURITY & ACCESS CONTROL
+# ==========================================
+
+# BLOCK DIRECT ACCESS TO results.json ONLY
+# This protects your data but allows manifest.json (PWA) to work.
+<Files results.json>
+ Order Allow,Deny
+ Deny from all
+</Files>
+
+# BLOCK FAKE BOTS
+SetEnvIfNoCase User-Agent "^$" bad_bot
+SetEnvIfNoCase User-Agent "python" bad_bot
+SetEnvIfNoCase User-Agent "curl" bad_bot
+SetEnvIfNoCase User-Agent "wget" bad_bot
+SetEnvIfNoCase User-Agent "libwww-perl" bad_bot
+
+<Limit GET POST>
+    Order Allow,Deny
+    Allow from all
+    Deny from env=bad_bot
+</Limit>
