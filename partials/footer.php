@@ -5,7 +5,7 @@
             <div class="space-y-3">
                 <h3 class="text-lg font-black text-white tracking-tight">Lottong Pinoy</h3>
                 <p class="text-slate-500 text-xs leading-relaxed max-w-[250px] mx-auto md:mx-0">
-                    Providing accurate lotto results and intelligent analysis for the Filipino community.
+                    The Philippines' most comprehensive PCSO lottery results and analysis platform. Providing accurate, real-time lotto results and intelligent statistical tools for the Filipino community since 2024.
                 </p>
             </div>
 
@@ -15,6 +15,8 @@
                     <li><a href="#" data-tab="about" class="hover:text-sky-400 transition-colors footer-link">About Us</a></li>
                     <li><a href="#" data-tab="contact" class="hover:text-sky-400 transition-colors footer-link">Contact Us</a></li>
                     <li><a href="#" data-tab="privacy" class="hover:text-sky-400 transition-colors footer-link">Privacy Policy</a></li>
+                    <li><a href="#" data-tab="terms" class="hover:text-sky-400 transition-colors footer-link">Terms of Service</a></li>
+                    <li><a href="#" data-tab="faq" class="hover:text-sky-400 transition-colors footer-link">FAQ</a></li>
                     <li><a href="https://www.pcso.gov.ph/" target="_blank" class="hover:text-sky-400 transition-colors">Official PCSO</a></li>
                 </ul>
             </div>
@@ -31,10 +33,9 @@
             </div>
 
             <div>
-                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Disclaimer</h4>
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Legal</h4>
                 <p class="text-slate-500 text-xs leading-relaxed">
-                    This is an independent application. We are not affiliated with PCSO. 
-                    Please verify results with official sources.
+                    Lottong Pinoy is an independent application. We are not affiliated with, endorsed by, or connected to the Philippine Charity Sweepstakes Office (PCSO) or any government agency. All results are for informational purposes only. Always verify winning numbers on the <a href="https://www.pcso.gov.ph/" target="_blank" class="text-sky-400 underline">official PCSO website</a>.
                 </p>
             </div>
         </div>

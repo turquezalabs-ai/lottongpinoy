@@ -8,7 +8,7 @@
  $og_image = "https://lottong-pinoy.com/img/og-image.jpg";
  $adsense_client_id = "ca-pub-8747017339704776";
  $ga4_measurement_id = "G-DJGNHWLX22";
- $gsc_verification_code = "REPLACE_WITH_YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE";
+ $gsc_verification_code = "WKvaftSclpF5Pa-Dyitap0eFb-IVdZ2INrOlyK8qYMw";
 
  // Dynamic lastmod for sitemap
  $today_date = date('Y-m-d');
@@ -376,6 +376,7 @@
             <?php include 'views/blog.php'; ?>
             <?php include 'views/article.php'; ?>
             <?php include 'views/alaga.php'; ?>
+            <?php include 'views/terms.php'; ?>
         </main>
 
     </div>
