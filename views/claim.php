@@ -122,5 +122,35 @@
             </p>
         </div>
 
-    </div>
-</section>
+        <!-- DETAILED CLAIMING PROCESS -->
+        <div class="bg-slate-800 rounded-3xl border border-slate-700 shadow-xl overflow-hidden mt-6">
+            <div class="p-6 border-b border-slate-700">
+                <h3 class="text-xl font-bold text-white">Detailed Claiming Process for Jackpot Winners</h3>
+                <p class="text-sm text-slate-400 mt-1">Everything you need to know about claiming a major lotto prize.</p>
+            </div>
+            <div class="p-6 space-y-6 text-slate-400 text-sm leading-relaxed">
+                <div>
+                    <h4 class="font-bold text-white mb-2">Before You Go to the PCSO Office</h4>
+                    <p>Winning a lotto jackpot is an overwhelming experience, but it is important to stay calm and take the right steps before heading to the PCSO office. First, sign the back of your winning ticket immediately if you have not already done so. Write your full name and contact number on the back. Make several photocopies of the ticket and store the original in a safe, dry place — consider a ziplock bag to protect it from moisture. Do not tell everyone about your win; keep the information within your most trusted circle. Consider consulting a lawyer or financial advisor before claiming, especially for large jackpots, to help you plan for the financial implications of your windfall.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-2">At the PCSO Main Office</h4>
+                    <p>The PCSO Main Office is located at the PICC Complex, Roxas Boulevard, Manila. When you arrive, proceed to the Prize Claim Department and present your winning ticket and two valid government-issued IDs (such as passport, driver's license, PhilSys ID, or voter's ID). The staff will validate your ticket through their computer system to confirm it is a genuine winning ticket. Once validated, you will be asked to fill out a claim form with your personal details. The entire validation and processing typically takes several hours, and the prize is usually paid via check issued by the Land Bank of the Philippines.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-2">After Receiving Your Prize</h4>
+                    <p>Once you receive your prize check, deposit it into your bank account as soon as possible. For large amounts, consider opening a separate bank account specifically for your winnings. Seek professional financial advice to help you manage your windfall wisely — this includes tax planning, investment strategies, and creating a sustainable budget. Many jackpot winners have lost their fortunes within a few years due to poor financial management, so taking a measured and informed approach to your winnings is crucial. Avoid making major purchases or lifestyle changes immediately after receiving your prize.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-2">Common Mistakes to Avoid</h4>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li>Do not write on or mark the front of your winning ticket in any way.</li>
+                        <li>Do not laminate your ticket — this can damage the barcode and make it unreadable.</li>
+                        <li>Do not post photos of your winning ticket on social media before claiming.</li>
+                        <li>Do not wait too long to claim — tickets are valid for only one year from the draw date.</li>
+                        <li>Do not forget that prizes above ₱10,000 are subject to 20% withholding tax.</li>
+                        <li>Do not lose your ticket — remember, it is a bearer instrument and can be claimed by anyone who holds it.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
