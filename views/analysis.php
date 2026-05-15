@@ -8,6 +8,49 @@
             Visualize hot, cold, and overdue numbers with interactive data charts.
         </p>
     </div>
+
+    <!-- ANALYSIS INTRODUCTION CONTENT -->
+    <div class="max-w-4xl mx-auto mb-10 space-y-6 px-4">
+        <div class="bg-slate-800/60 rounded-2xl border border-slate-700 p-6 md:p-8">
+            <h3 class="text-xl md:text-2xl font-black text-white mb-4">Statistical Analysis of PCSO Lottery Data</h3>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
+                The Lottong Pinoy Analysis tool provides a comprehensive statistical breakdown of historical PCSO lottery draws. Whether you are a casual player curious about number trends or a dedicated analyst looking for patterns, this tool gives you the data you need to make informed decisions about your number selections. Our analysis engine processes thousands of past draws to calculate frequency distributions, identify hot and cold numbers, detect frequently paired numbers, and generate visual heatmaps of the entire number field.
+            </p>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                The analysis covers all nine PCSO games and allows you to customize the date range for your query. This means you can focus on recent trends by selecting the last few months, or take a long-term view by analyzing years of historical data. The four key statistics at the top — Total Draws, Total Jackpot, Average Sum, and Winners — provide a quick overview of the data scope. The detailed sections below dive deeper into individual number performance, number groupings, and frequency patterns that emerge from the data.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
+                <h4 class="text-sm font-bold text-white mb-2">🔥 Hot Numbers — Frequency Leaders</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Hot numbers are those that have appeared most frequently in the winning combinations within your selected date range. These numbers have been drawn more often than the statistical average, which could indicate a short-term trend or simply reflect the natural variance inherent in random number generation. Some players choose to include hot numbers in their selections, believing that trends may continue in the short term. However, it is crucial to understand that frequency deviations are normal in any random system and do not imply predictability.</p>
+            </div>
+            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
+                <h4 class="text-sm font-bold text-white mb-2">❄️ Cold Numbers — Statistically Overdue</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Cold numbers are the opposite of hot numbers — they have appeared least frequently in draws within your selected period. The concept of "overdue" numbers is based on the expectation that over a sufficiently large number of draws, each number should appear roughly the same number of times. Numbers that have been drawn far less than expected are considered "cold" or "overdue." While this does not mean they are more likely to appear next, some players use cold numbers as part of a contrarian strategy, betting that these numbers will eventually regress toward their expected frequency.</p>
+            </div>
+            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
+                <h4 class="text-sm font-bold text-white mb-2">🔗 Frequent Pairs and Trios</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Our analysis identifies pairs and trios of numbers that have appeared together in winning combinations more frequently than would be expected by chance alone. For example, if numbers 12 and 34 have appeared in the same draw 15 times over the past year while the average pair frequency is 8, that pair would be highlighted as a frequent duo. Similarly, trios show groups of three numbers that tend to appear together. These co-occurrence patterns can be interesting for players who want to understand which number groupings have historically shown up together, though statistical independence means these patterns do not predict future co-occurrences.</p>
+            </div>
+            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
+                <h4 class="text-sm font-bold text-white mb-2">🌡️ Number Heatmap</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">The heatmap provides a visual representation of every number's frequency in the selected game, color-coded from blue (cold/least frequent) through neutral gray to red (hot/most frequent). This at-a-glance visualization makes it easy to spot which numbers have been drawn most and least often without having to read through individual frequency counts. The heatmap is particularly useful for identifying clusters of hot or cold numbers in specific ranges of the number field, which can inform your selection strategy whether you prefer to focus on trending numbers or seek out overdue ones.</p>
+            </div>
+        </div>
+
+        <div class="bg-purple-500/10 border border-purple-500/20 rounded-xl p-5">
+            <h4 class="text-sm font-bold text-purple-400 mb-2">Understanding the Average Sum Statistic</h4>
+            <p class="text-slate-300 text-xs leading-relaxed mb-3">
+                One of the key statistics our analysis provides is the Average Sum of winning combinations. For a 6/58 game, the theoretical median sum is approximately 177 (the midpoint of the possible range from 21 to 333). Combinations with sums close to the theoretical average are more common because there are more ways to form combinations that sum to the middle range. This statistical insight is used by some players to avoid combinations with extremely high or low sums, as those are less likely to occur purely due to combinatorial mathematics.
+            </p>
+            <p class="text-slate-400 text-xs leading-relaxed">
+                <strong class="text-slate-300">Important Disclaimer:</strong> Statistical analysis of lottery data is provided for educational and entertainment purposes. Lottery draws are random events, and no amount of historical analysis can predict future results. The patterns and trends shown by this tool are descriptive of past data only, not predictive of future outcomes. Lottong Pinoy is an independent tool and is not affiliated with PCSO. Please play responsibly.
+            </p>
+        </div>
+    </div>
+
     <div class="flex flex-col lg:flex-row gap-6">
         
         <!-- SIDEBAR -->

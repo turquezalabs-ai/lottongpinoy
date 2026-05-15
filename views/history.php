@@ -8,6 +8,48 @@
             Trace the trends and explore the full history of Philippine lottery draws.
         </p>
     </div>
+
+    <!-- HISTORY INTRODUCTION CONTENT -->
+    <div class="max-w-4xl mx-auto mb-10 space-y-6 px-4">
+        <div class="bg-slate-800/60 rounded-2xl border border-slate-700 p-6 md:p-8">
+            <h3 class="text-xl md:text-2xl font-black text-white mb-4">Explore the Complete PCSO Draw History</h3>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
+                The Philippine Charity Sweepstakes Office (PCSO) has been conducting lottery draws since 1933, making it one of the oldest lottery systems in Southeast Asia. Our comprehensive draw history archive allows you to search through thousands of past results across all PCSO games, including Ultra Lotto 6/58, Grand Lotto 6/55, Super Lotto 6/49, Mega Lotto 6/45, Lotto 6/42, and the digit games 6D, 4D, 3D, and 2D Lotto. Whether you are researching number patterns, verifying an old ticket, or simply curious about historical outcomes, this tool puts the entire PCSO database at your fingertips.
+            </p>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
+                Each record in our archive includes the draw date, the winning combination, the jackpot prize amount, and the number of winners for that particular draw. You can filter results by game type (major or digit), specific game, draw schedule, and custom date ranges to narrow down exactly what you are looking for. The quick stats panel updates automatically to show you summary statistics for your filtered results, including total draws, total winners, and aggregate prize amounts.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
+                <div class="text-2xl mb-3">🔍</div>
+                <h4 class="text-sm font-bold text-white mb-2">Advanced Filtering</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Filter by game category, specific game, draw schedule, and custom date ranges spanning multiple years. Our archive covers draws from as far back as data is available, giving you the most comprehensive view of PCSO results.</p>
+            </div>
+            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
+                <div class="text-2xl mb-3">📊</div>
+                <h4 class="text-sm font-bold text-white mb-2">Quick Statistics</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Instantly see aggregate statistics for your filtered results including total number of draws, combined jackpot prizes, and total winners. These stats help you understand the scope and frequency of outcomes for any game and period.</p>
+            </div>
+            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
+                <div class="text-2xl mb-3">📄</div>
+                <h4 class="text-sm font-bold text-white mb-2">Paginated Results</h4>
+                <p class="text-slate-400 text-xs leading-relaxed">Browse through results 15 draws at a time with our convenient pagination system. Each result displays the draw date, winning combination with visual number balls, jackpot prize, and winner count for easy scanning.</p>
+            </div>
+        </div>
+
+        <div class="bg-blue-500/10 border border-blue-500/20 rounded-xl p-5">
+            <h4 class="text-sm font-bold text-blue-400 mb-2">How to Use the History Archive</h4>
+            <p class="text-slate-300 text-xs leading-relaxed mb-3">
+                Using the draw history tool is straightforward. First, select the game category — Major Games for 6-number lotto formats (6/58, 6/55, 6/49, 6/45, 6/42) or Digit Games for fixed-digit formats (6D, 4D, 3D, 2D). Next, choose the specific game from the dropdown. If you selected a digit game, you can further filter by draw schedule (11 AM, 4 PM, or 9 PM). Then set your desired date range using the From and To selectors. Click "Fetch Results" to load the matching draws. The quick stats panel will automatically update with summary data for your selection.
+            </p>
+            <p class="text-slate-400 text-xs leading-relaxed">
+                <strong class="text-slate-300">Important Disclaimer:</strong> Historical lottery results are provided for informational and entertainment purposes only. Past results do not influence or predict future draws. Each lottery draw is an independent random event. Please play responsibly and only spend what you can afford.
+            </p>
+        </div>
+    </div>
+
     <div class="flex flex-col lg:flex-row gap-6">
         
         <!-- SIDEBAR -->
