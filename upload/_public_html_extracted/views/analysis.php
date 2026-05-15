@@ -1,10 +1,10 @@
 <!-- views/analysis.php -->
 <section id="section-analysis" class="section-page hidden">
-    <div class="text-center my-10 md:my-20">
+    <div class="text-center my-6 md:my-10">
         <h2 class="text-3xl md:text-5xl font-black text-white leading-tight">
            Deep-Dive Pattern<span class="text-blue-400"> Analysis</span>
         </h2>
-        <p class="text-slate-400 text-md md:text-lg max-w-2xl mx-auto mt-4 font-medium">
+        <p class="text-slate-400 text-md md:text-lg max-w-2xl mx-auto mt-3 font-medium">
             Visualize hot, cold, and overdue numbers with interactive data charts.
         </p>
     </div>

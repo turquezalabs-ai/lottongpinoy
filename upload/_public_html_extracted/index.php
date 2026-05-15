@@ -217,6 +217,38 @@
             "@type": "Answer",
             "text": "Winning tickets are valid for one (1) year from the date of the draw. Unclaimed prizes go to the PCSO Charity Fund."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What is System Play in PCSO lotto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "System Play lets you select more than 6 numbers, generating multiple combinations. System 7 generates 7 combinations for 140 pesos, System 8 generates 28 combinations for 560 pesos, up to System 12 which generates 924 combinations for 18,480 pesos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the easiest PCSO lotto game to win?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 2D Lotto (EZ2) has the best odds at 1 in 100. Among major games, Lotto 6/42 has the best odds at 1 in 5,245,786."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Lottong Pinoy affiliated with PCSO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, Lottong Pinoy is an independent application. We are not affiliated with, endorsed by, or connected to the PCSO or any government agency. We display publicly available results for informational purposes only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are hot and cold numbers in lotto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hot numbers are those drawn most frequently in recent draws. Cold numbers are those drawn least frequently or overdue. These are historical statistics only and do not predict future results."
+          }
         }
       ]
     }
@@ -310,7 +342,7 @@
     <!-- Placed immediately after body open for maximum visibility     -->
     <!-- Replace data-ad-slot with your actual Ad Slot ID             -->
     <!-- ============================================================ -->
-    <div class="ad-container w-full bg-slate-950/50 py-2 text-center" id="ad-top-banner">
+    <div class="ad-container w-full bg-slate-950/50 py-1 text-center" id="ad-top-banner">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-8747017339704776"
@@ -352,7 +384,7 @@
             <?php include 'views/home.php'; ?>
 
             <!-- ADSENSE: IN-FEED AD (between results and history) -->
-            <div class="ad-container my-8 px-4" id="ad-in-feed-1">
+            <div class="ad-container my-4 px-4" id="ad-in-feed-1">
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-8747017339704776"

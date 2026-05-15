@@ -1,10 +1,10 @@
 <!-- views/history.php -->
 <section id="section-history" class="section-page hidden">
-    <div class="text-center my-10 md:my-20">
+    <div class="text-center my-6 md:my-10">
         <h2 class="text-3xl md:text-5xl font-black text-white leading-tight">
             The Complete Data<span class="text-blue-400"> Archive.</span>
         </h2>
-        <p class="text-slate-400 text-md md:text-lg max-w-2xl mx-auto mt-4 font-medium">
+        <p class="text-slate-400 text-md md:text-lg max-w-2xl mx-auto mt-3 font-medium">
             Trace the trends and explore the full history of Philippine lottery draws.
         </p>
     </div>
