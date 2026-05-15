@@ -277,8 +277,9 @@
     </script>
 
     <!-- ============================================================ -->
-    <!-- GOOGLE ADSENSE                                               -->
-    <!-- Auto-ads + Publisher ID. Ad units are placed in the body.    -->
+    <!-- GOOGLE ADSENSE AUTO-ADS                                      -->
+    <!-- Auto-ads automatically places ads in optimal positions.      -->
+    <!-- No manual ad units needed — Google handles everything.        -->
     <!-- ============================================================ -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=<?php echo $adsense_client_id; ?>" crossorigin="anonymous"></script>
 
@@ -337,21 +338,6 @@
 
 <body class="min-h-screen bg-slate-900 text-slate-200 font-sans">
 
-    <!-- ============================================================ -->
-    <!-- ADSENSE: TOP LEADERBOARD BANNER                              -->
-    <!-- Placed immediately after body open for maximum visibility     -->
-    <!-- Replace data-ad-slot with your actual Ad Slot ID             -->
-    <!-- ============================================================ -->
-    <div class="ad-container w-full bg-slate-950/50 py-1 text-center" id="ad-top-banner">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-8747017339704776"
-             data-ad-slot="0000000001"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
-
     <div class="main-wrapper">
 
         <header class="sticky top-0 z-50 flex justify-between items-center border-b border-slate-800 bg-slate-950/90 backdrop-blur-md py-3 px-4 -mx-4 w-[calc(100%+2rem)] md:-mx-6 md:w-[calc(100%+3rem)] md:relative md:bg-transparent md:backdrop-blur-none md:py-0 md:mb-6 md:pb-4 md:border-slate-700">
@@ -383,17 +369,6 @@
         <main id="main-content" role="main">
             <?php include 'views/home.php'; ?>
 
-            <!-- ADSENSE: IN-FEED AD (between results and history) -->
-            <div class="ad-container my-4 px-4" id="ad-in-feed-1">
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-8747017339704776"
-                     data-ad-slot="0000000002"
-                     data-ad-format="fluid"
-                     data-ad-layout-key="-6t+ed+2i-1n-4w"></ins>
-                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            </div>
-
             <?php include 'views/history.php'; ?>
             <?php include 'views/generator.php'; ?>
             <?php include 'views/checker.php'; ?>
@@ -411,17 +386,6 @@
             <?php include 'views/terms.php'; ?>
         </main>
 
-    </div>
-
-    <!-- ADSENSE: BOTTOM LEADERBOARD BANNER (before footer) -->
-    <div class="ad-container w-full bg-slate-950/50 py-4 text-center" id="ad-bottom-banner">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-8747017339704776"
-             data-ad-slot="0000000003"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
     <?php include 'partials/footer.php'; ?>
