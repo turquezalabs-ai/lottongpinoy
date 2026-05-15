@@ -47,3 +47,31 @@ Stage Summary:
 - Total new content: ~3000+ words across all pages
 - New Terms of Service page created (14 legal sections)
 - All code pushed to https://github.com/turquezalabs-ai/lottongpinoy.git
+
+---
+Task ID: 3
+Agent: Main Agent
+Task: Remove manual ad gaps, switch to auto-ads only, add more rich content for AdSense approval
+
+Work Log:
+- Confirmed Google AdSense Auto-Ads approach with user: no manual ad units needed, Google places ads automatically
+- Removed 3 manual ad unit `<ins>` placeholders from index.php body (top banner, in-feed, bottom banner)
+- Updated AdSense comment in head to clarify auto-ads only approach
+- Updated partials/ads.php: all ad functions now commented out as templates for future use after AdSense approval
+- Fixed layout gaps by removing empty ad-container divs that created blank spaces
+- Verified Search Console verification code is correct (WKvaftSclpF5Pa-Dyitap0eFb-IVdZ2INrOlyK8qYMw)
+- Added 5 new substantial content sections to home.php:
+  1. PCSO Lotto Odds & Probability — Complete Reference (full table for all 9 games with combinations, odds, jackpots, prices)
+  2. PCSO System Play — Complete Cost & Combination Guide (System 7-12 table with costs and odds improvement)
+  3. Biggest PCSO Lotto Jackpots in Philippine History (4 record jackpots with details)
+  4. PCSO Lotto Tax Guide — How TRAIN Law Affects Your Winnings (7-row tax table with gross/net breakdowns)
+  5. PCSO Lotto Draw Schedule — At a Glance (3 time-slot cards: 11AM, 4PM, 9PM)
+- Total new content: ~2000+ words of unique, substantial reference content
+- All code pushed to https://github.com/turquezalabs-ai/lottongpinoy.git
+
+Stage Summary:
+- Removed all manual ad placeholders — clean layout with no gaps, auto-ads handles everything
+- Added 5 rich content sections with data tables for AdSense "high value" classification
+- Site now has comprehensive reference content that AdSense reviewers look for
+- Search Console verification code confirmed correct
+- All changes committed and pushed to GitHub main branch
