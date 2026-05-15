@@ -26,6 +26,11 @@
                     We built this platform to help you track your numbers, analyze winning patterns through our Hot and Cold number analysis, check past results without the hassle, and generate statistically balanced number combinations using our Smart Generator tool. Every feature on Lottong Pinoy is designed with the Filipino bettor in mind.
                 </p>
 
+                <h3 class="text-lg font-bold text-white pt-4">Smart Analysis Tools for Smarter Play</h3>
+                <p>
+                    Beyond simply displaying results, Lottong Pinoy offers powerful analysis tools to help you understand lottery patterns. Our Hot Numbers feature identifies the most frequently drawn numbers in recent games, while Cold Numbers highlights those that have been overdue for a draw. The Frequent Pairs and Trios analysis shows which number combinations tend to appear together, and our Frequency Distribution charts give you a complete visual overview of how often each number has been drawn. Our Lucky Number Generator uses these statistical insights to create balanced number combinations based on different strategies — from favoring hot numbers to mixing hot and cold for a balanced approach. While no tool can guarantee a win, these features give you a data-driven way to pick your numbers.
+                </p>
+
                 <h3 class="text-lg font-bold text-white pt-4">What Makes Us Different</h3>
                 <p>
                     There are many websites that display PCSO lotto results, but Lottong Pinoy goes beyond simply listing winning numbers. Our platform provides real-time statistical analysis including hot numbers (the most frequently drawn numbers in recent draws), cold numbers (the numbers that have been overdue for a win), frequent pairs and trios (numbers that tend to appear together), and frequency distribution charts that visualize the entire history of each game. Our Lucky Number Generator uses these statistical insights to create balanced combinations, offering different strategy levels so you can choose how much data influence you want in your picks.

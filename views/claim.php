@@ -4,11 +4,61 @@
 
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-black text-white leading-tight">
-                How to Claim <span class="text-green-400">Your Prize.</span>
+                How to Play & <span class="text-green-400">Claim Prizes</span>
             </h2>
             <p class="text-slate-400 text-md md:text-lg max-w-2xl mx-auto mt-3 font-medium">
-                Congratulations! Follow this official guide to claim your winnings safely and securely.
+                Step-by-step guide to playing the PCSO lotto and claiming your winnings.
             </p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- HOW TO PLAY GUIDE - Moved from home page for distribution     -->
+        <!-- ============================================================ -->
+        <div class="bg-slate-800/30 rounded-3xl border border-slate-700/50 p-6 md:p-10 mb-8 space-y-6">
+
+            <h2 class="text-2xl md:text-3xl font-black text-white mb-4">How to Play the PCSO Lotto — Step-by-Step Guide</h2>
+            <p class="text-slate-400 text-sm md:text-base leading-relaxed">
+                Playing the PCSO lotto is straightforward, but understanding the process ensures you have the best experience. Whether you are a first-time player or a seasoned bettor, following these steps will help you purchase tickets correctly, check results efficiently, and claim prizes without issues.
+            </p>
+
+            <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold shrink-0">1</div>
+                    <div>
+                        <h4 class="font-bold text-white">Choose Your Game</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mt-1">Visit any authorized PCSO lotto outlet and select which game you want to play. Each game has different rules, prize structures, and draw schedules. Consider your budget and preferred odds when choosing. Major games (6/42, 6/45, 6/49, 6/55, 6/58) offer bigger jackpots but harder odds, while digit games (2D, 3D, 4D, 6D) offer better odds with smaller prizes.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold shrink-0">2</div>
+                    <div>
+                        <h4 class="font-bold text-white">Fill Out Your Ticket</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mt-1">For major games, mark six numbers on the betting card within the specified range. For digit games, write your chosen digits on the card. You can also ask the teller for a "Lucky Pick" where the computer randomly generates your numbers. Decide whether you want to play standard or System Play (which generates multiple combinations from more than six selected numbers).</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold shrink-0">3</div>
+                    <div>
+                        <h4 class="font-bold text-white">Pay and Get Your Ticket</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mt-1">Pay the teller and receive your printed ticket. Standard tickets cost 20 pesos for major games and 10 pesos for digit games. Immediately check that the numbers, game type, and draw date are correct before leaving the counter. Sign the back of your ticket right away to establish ownership — this is critical because a lotto ticket is a bearer instrument, meaning whoever holds it can claim the prize.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold shrink-0">4</div>
+                    <div>
+                        <h4 class="font-bold text-white">Watch the Draw or Check Results Online</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mt-1">PCSO draws are broadcast live on PTV-4 and streamed on the official PCSO Facebook page. You can also check results on Lottong Pinoy within minutes after each draw. Our platform updates automatically, so you always have access to the latest winning numbers. Use our Number Checker tool to quickly verify if your numbers match any winning combination from past draws.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold shrink-0">5</div>
+                    <div>
+                        <h4 class="font-bold text-white">Claim Your Prize If You Win</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mt-1">Prizes of 20 to 5,000 pesos can be claimed at any authorized PCSO outlet. Prizes of 5,001 to 20,000 pesos must be claimed at a PCSO Branch Office with valid ID. Prizes above 20,000 pesos and all jackpot prizes must be claimed at the PCSO Main Office in Manila. Winnings above 10,000 pesos are subject to a 20% final withholding tax under the TRAIN Law. All prizes must be claimed within one year from the draw date. See the claiming guide below for complete details.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- ALERT BOX -->
@@ -154,3 +204,6 @@
                 </div>
             </div>
         </div>
+
+    </div>
+</section>
