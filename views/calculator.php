@@ -15,15 +15,16 @@
             <!-- INPUT SIDE -->
             <div class="space-y-4">
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase mb-2">Jackpot Prize (₱)</label>
-                    <input type="text" id="calcPrize" class="input text-lg" placeholder="e.g. 50,000,000" oninput="formatCurrency(this)">
+                    <label for="calcPrize" class="block text-xs font-bold text-slate-400 uppercase mb-2">Jackpot Prize (₱)</label>
+                    <input type="text" id="calcPrize" class="input text-lg" placeholder="e.g. 50,000,000" oninput="formatCurrency(this)" aria-describedby="calcPrizeHelp">
+                    <span id="calcPrizeHelp" class="sr-only text-xs text-slate-500">Enter the jackpot prize amount in Philippine pesos</span>
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase mb-2">Number of Winners</label>
-                    <input type="number" id="calcWinners" class="input text-lg" value="1" min="1">
+                    <label for="calcWinners" class="block text-xs font-bold text-slate-400 uppercase mb-2">Number of Winners</label>
+                    <input type="number" id="calcWinners" class="input text-lg" value="1" min="1" aria-label="Number of winners sharing the prize">
                 </div>
                 
-                <button id="calculateBtn" class="btn btn-primary w-full py-3 text-sm uppercase font-bold tracking-wider">
+                <button id="calculateBtn" class="btn btn-primary w-full py-3 text-sm uppercase font-bold tracking-wider focus:outline-none focus:ring-2 focus:ring-blue-400">
                     Calculate Share
                 </button>
             </div>

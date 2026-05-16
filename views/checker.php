@@ -75,8 +75,8 @@
                     <div>
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Matching Logic</label>
                         <div class="flex items-center justify-center bg-slate-900 rounded-xl p-1 border border-slate-700">
-                            <button id="logicExact" class="w-1/2 py-2 text-xs font-bold rounded-lg transition-all bg-yellow-500 text-slate-900">Exact</button>
-                            <button id="logicPartial" class="w-1/2 py-2 text-xs font-bold rounded-lg transition-all text-slate-400 hover:text-white">Partial</button>
+                            <button id="logicExact" aria-label="Exact match mode" class="w-1/2 py-2 text-xs font-bold rounded-lg transition-all bg-yellow-500 text-slate-900 focus:outline-none focus:ring-2 focus:ring-yellow-400">Exact</button>
+                            <button id="logicPartial" aria-label="Partial match mode" class="w-1/2 py-2 text-xs font-bold rounded-lg transition-all text-slate-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">Partial</button>
                         </div>
                     </div>
                 </div>
@@ -107,8 +107,8 @@
 
                 <!-- Action Footer -->
                 <div class="px-6 py-4 border-t border-slate-700 flex justify-between items-center bg-slate-900/30">
-                    <button id="clearSelectionBtn" class="text-xs text-red-400 hover:text-red-300 font-bold transition-colors">Clear Selection</button>
-                    <button id="checkBtn" class="bg-yellow-500 hover:bg-yellow-400 text-slate-900 font-black px-8 py-3 rounded-xl shadow-lg uppercase tracking-widest text-xs transition-all">Check History</button>
+                    <button id="clearSelectionBtn" class="text-xs text-red-400 hover:text-red-300 font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-red-400 rounded">Clear Selection</button>
+                    <button id="checkBtn" class="bg-yellow-500 hover:bg-yellow-400 text-slate-900 font-black px-8 py-3 rounded-xl shadow-lg uppercase tracking-widest text-xs transition-all focus:outline-none focus:ring-2 focus:ring-yellow-400">Check History</button>
                 </div>
             </div>
 

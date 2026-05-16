@@ -16,16 +16,16 @@
             <h3 class="text-lg font-bold text-white mb-4">Add New Combination</h3>
 
             <div class="grid grid-cols-6 gap-2 mb-4">
-                <input type="number" min="1" max="58" placeholder="01" class="alaga-input input text-center text-lg font-bold" id="alagaInput1">
-                <input type="number" min="1" max="58" placeholder="02" class="alaga-input input text-center text-lg font-bold" id="alagaInput2">
-                <input type="number" min="1" max="58" placeholder="03" class="alaga-input input text-center text-lg font-bold" id="alagaInput3">
-                <input type="number" min="1" max="58" placeholder="04" class="alaga-input input text-center text-lg font-bold" id="alagaInput4">
-                <input type="number" min="1" max="58" placeholder="05" class="alaga-input input text-center text-lg font-bold" id="alagaInput5">
-                <input type="number" min="1" max="58" placeholder="06" class="alaga-input input text-center text-lg font-bold" id="alagaInput6">
+                <input type="number" min="1" max="58" placeholder="01" aria-label="Number 1" class="alaga-input input text-center text-lg font-bold" id="alagaInput1">
+                <input type="number" min="1" max="58" placeholder="02" aria-label="Number 2" class="alaga-input input text-center text-lg font-bold" id="alagaInput2">
+                <input type="number" min="1" max="58" placeholder="03" aria-label="Number 3" class="alaga-input input text-center text-lg font-bold" id="alagaInput3">
+                <input type="number" min="1" max="58" placeholder="04" aria-label="Number 4" class="alaga-input input text-center text-lg font-bold" id="alagaInput4">
+                <input type="number" min="1" max="58" placeholder="05" aria-label="Number 5" class="alaga-input input text-center text-lg font-bold" id="alagaInput5">
+                <input type="number" min="1" max="58" placeholder="06" aria-label="Number 6" class="alaga-input input text-center text-lg font-bold" id="alagaInput6">
             </div>
 
-            <button id="saveAlagaBtn" class="w-full bg-pink-600 hover:bg-pink-500 text-white font-bold py-3 rounded-xl transition-colors">
-                💾 Save to My Alaga
+            <button id="saveAlagaBtn" class="w-full bg-pink-600 hover:bg-pink-500 text-white font-bold py-3 rounded-xl transition-colors focus:outline-none focus:ring-2 focus:ring-pink-400">
+                Save to My Alaga
             </button>
         </div>
 

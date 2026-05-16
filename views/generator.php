@@ -13,14 +13,21 @@
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
 
-    /* Animations */
+    /* Animations - composited friendly */
     .animate-fade-in {
         animation: fadeIn 0.3s ease-in;
+        will-change: transform, opacity;
     }
 
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .animate-fade-in {
+            animation: none;
+        }
     }
 
     /* --- SCREENSHOT CAPTURE STYLES --- */
@@ -159,7 +166,7 @@
             <div class="bg-slate-800 rounded-2xl border border-slate-700 shadow-xl overflow-hidden">
                 <div class="px-6 py-4 border-b border-slate-700 flex justify-between items-center">
                     <h3 class="text-lg font-bold text-white">Recent Generations</h3>
-                    <button id="clearGenHistory" class="text-xs text-red-400 hover:text-red-300 px-3 py-1 rounded border border-slate-700">Clear All</button>
+                    <button id="clearGenHistory" aria-label="Clear all generated number history" class="text-xs text-red-400 hover:text-red-300 px-3 py-1 rounded border border-slate-700 focus:outline-none focus:ring-2 focus:ring-red-400">Clear All</button>
                 </div>
                 <div id="printArea" class="p-4">
                     <div id="printHeader" class="hidden text-center border-b border-slate-700 pb-4 mb-4">
@@ -171,8 +178,8 @@
                     </div>
                 </div>
                 <div class="px-6 py-4 border-t border-slate-700 flex flex-wrap gap-3 justify-center">
-                    <button id="exportTxtBtn" class="text-xs font-bold text-slate-300 hover:text-white px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 transition-all">Save</button>
-                    <button id="printBtn" class="text-xs font-bold text-slate-300 hover:text-white px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 transition-all">Print</button>
+                    <button id="exportTxtBtn" class="text-xs font-bold text-slate-300 hover:text-white px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400">Save</button>
+                    <button id="printBtn" class="text-xs font-bold text-slate-300 hover:text-white px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400">Print</button>
                 </div>
             </div>
         </main>
@@ -182,9 +189,9 @@
 <div id="screenshotWrapper" style="position: absolute; top: -9999px; left: -9999px; z-index: -9999;">
     <div id="captureTarget" class="bg-slate-950 flex flex-col items-center justify-between p-8" style="width: 800px; height: 800px; border: 1px solid #1e293b; box-sizing: border-box;">
         <div class="w-full flex justify-between items-start">
-            <img id="screenshotLogo" src="img/icon-192x192.png" crossorigin="anonymous" class="shadow-2xl" style="height: 150px; width: 150px; border-radius: 10px;">
+            <img id="screenshotLogo" src="img/icon-192x192.png" alt="Lottong Pinoy Logo" crossorigin="anonymous" class="shadow-2xl" width="150" height="150" style="height: 150px; width: 150px; border-radius: 10px;">
             <div class="bg-white rounded-2xl shadow-2xl p-3">
-                <img id="screenshotQR" src="img/qrcode.png" crossorigin="anonymous" style="height: 126px; width: 126px;">
+                <img id="screenshotQR" src="img/qrcode.png" alt="QR Code for lottong-pinoy.com" crossorigin="anonymous" width="126" height="126" style="height: 126px; width: 126px;">
             </div>
         </div>
 

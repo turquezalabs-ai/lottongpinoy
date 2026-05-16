@@ -96,7 +96,7 @@
                         </div>
                     </div>
 
-                    <button id="analyzeBtn" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-black py-4 rounded-xl shadow-lg uppercase tracking-widest text-xs">Analyze Data</button>
+                    <button id="analyzeBtn" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-black py-4 rounded-xl shadow-lg uppercase tracking-widest text-xs focus:outline-none focus:ring-2 focus:ring-purple-400">Analyze Data</button>
                 </div>
 
                 <!-- NARRATIVE: Insight Box -->

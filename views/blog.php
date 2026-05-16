@@ -15,7 +15,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <!-- ARTICLE CARD 1 -->
-            <a href="#" data-article="tips-beginners" class="article-link group">
+            <a href="#" data-article="tips-beginners" class="article-link group" aria-label="Read article: 5 Tips for Lotto Beginners">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-sky-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
                         <span class="text-6xl">🎰</span>
@@ -36,7 +36,7 @@
             </a>
 
             <!-- ARTICLE CARD 2 -->
-            <a href="#" data-article="understanding-odds" class="article-link group">
+            <a href="#" data-article="understanding-odds" class="article-link group" aria-label="Read article: Understanding Lotto Odds">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-green-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-green-600 to-teal-600 flex items-center justify-center">
                         <span class="text-6xl">📊</span>
@@ -57,7 +57,7 @@
             </a>
 
             <!-- ARTICLE CARD 3 -->
-            <a href="#" data-article="pcso-charity" class="article-link group">
+            <a href="#" data-article="pcso-charity" class="article-link group" aria-label="Read article: How PCSO Helps Filipinos">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-yellow-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
                         <span class="text-6xl">❤️</span>
@@ -78,7 +78,7 @@
             </a>
 
              <!-- ARTICLE CARD 4 -->
-            <a href="#" data-article="myths-debunked" class="article-link group">
+            <a href="#" data-article="myths-debunked" class="article-link group" aria-label="Read article: Lotto Myths Debunked">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-red-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center">
                         <span class="text-6xl">🚫</span>
@@ -99,7 +99,7 @@
             </a>
 
             <!-- ARTICLE CARD 5 -->
-            <a href="#" data-article="system-play-guide" class="article-link group">
+            <a href="#" data-article="system-play-guide" class="article-link group" aria-label="Read article: PCSO System Play Explained">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-cyan-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
                         <span class="text-6xl">⚙️</span>
@@ -120,7 +120,7 @@
             </a>
 
             <!-- ARTICLE CARD 6 -->
-            <a href="#" data-article="responsible-gambling" class="article-link group">
+            <a href="#" data-article="responsible-gambling" class="article-link group" aria-label="Read article: Responsible Gambling Guide">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-emerald-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center">
                         <span class="text-6xl">🛡️</span>
@@ -141,7 +141,7 @@
             </a>
 
             <!-- ARTICLE CARD 7 -->
-            <a href="#" data-article="how-to-claim-jackpot" class="article-link group">
+            <a href="#" data-article="how-to-claim-jackpot" class="article-link group" aria-label="Read article: How to Claim a Jackpot Prize">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-amber-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center">
                         <span class="text-6xl">🏆</span>
@@ -162,7 +162,7 @@
             </a>
 
             <!-- ARTICLE CARD 8 -->
-            <a href="#" data-article="pcso-history" class="article-link group">
+            <a href="#" data-article="pcso-history" class="article-link group" aria-label="Read article: History of PCSO 1934 to Today">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-violet-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center">
                         <span class="text-6xl">🏛️</span>
@@ -183,7 +183,7 @@
             </a>
 
             <!-- ARTICLE CARD 9 -->
-            <a href="#" data-article="digit-games-strategy" class="article-link group">
+            <a href="#" data-article="digit-games-strategy" class="article-link group" aria-label="Read article: Digit Games Strategy Guide">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-pink-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center">
                         <span class="text-6xl">🔢</span>
@@ -204,7 +204,7 @@
             </a>
 
             <!-- ARTICLE CARD 10 -->
-            <a href="#" data-article="train-law-lotto-tax" class="article-link group">
+            <a href="#" data-article="train-law-lotto-tax" class="article-link group" aria-label="Read article: TRAIN Law and Lotto Taxes">
                 <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl transition-all duration-300 hover:border-indigo-500 hover:-translate-y-1 h-full flex flex-col">
                     <div class="h-48 bg-gradient-to-br from-indigo-500 to-blue-700 flex items-center justify-center">
                         <span class="text-6xl">💰</span>

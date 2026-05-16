@@ -112,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <button id="searchBtn" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-black py-4 rounded-xl shadow-lg uppercase tracking-widest text-xs">Fetch Results</button>
+                    <button id="searchBtn" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-black py-4 rounded-xl shadow-lg uppercase tracking-widest text-xs focus:outline-none focus:ring-2 focus:ring-blue-400">Fetch Results</button>
 
                     <!-- Stats (Hidden by default) -->
                     <div id="quickStatsBox" class="hidden pt-6 border-t border-slate-700">
@@ -168,9 +168,9 @@
 
             <!-- Pagination -->
             <div class="mt-8 flex justify-center items-center gap-6 text-xs font-black uppercase tracking-widest text-slate-500">
-                <button id="prevBtn" class="hover:text-blue-400">&larr; Previous</button>
+                <button id="prevBtn" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded px-2">&larr; Previous</button>
                 <span id="pageInfo" class="text-slate-300 font-bold">Page 1 / 1</span>
-                <button id="nextBtn" class="hover:text-blue-400">Next &rarr;</button>
+                <button id="nextBtn" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded px-2">Next &rarr;</button>
             </div>
         </main>
     </div>

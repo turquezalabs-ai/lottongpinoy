@@ -8,9 +8,11 @@
     border: 1px solid #1e293b;
     border-radius: 1.5rem;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     width: 100%; 
-    overflow: hidden; 
+    overflow: hidden;
+    will-change: transform;
+    contain: layout style paint;
 }
 
 .lotto-card:hover {
@@ -83,10 +85,11 @@
     background: linear-gradient(135deg, #f97316, #ea580c);
     color: white;
     box-shadow: 0 0 15px rgba(249, 115, 22, 0.4), 0 0 0 2px #fdba74;
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: hotPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     cursor: pointer;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
+    will-change: transform;
 }
 
 .lotto-ball--hot:hover {
@@ -219,9 +222,26 @@
 /* ==========================================
    6. ANIMATIONS
    ========================================== */
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: .7; }
+/* Composited animation using transform instead of opacity */
+@keyframes hotPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .lotto-ball--hot {
+        animation: none;
+    }
+    .lotto-card:hover {
+        transform: none;
+    }
+    .lotto-ball--hot:hover {
+        transform: none;
+    }
+    .num-ball.selected {
+        transform: none;
+    }
 }
 
 /* ==========================================

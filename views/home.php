@@ -13,7 +13,7 @@
             </p>
             <p>
                 <button id="homeGenerateBtn" type="button"
-                        class="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 mt-6 rounded-2xl transition-all text-xl shadow-lg shadow-green-900/40 active:scale-95">
+                        class="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 mt-6 rounded-2xl transition-colors text-xl shadow-lg shadow-green-900/40 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-400">
                     Generate Numbers Now
                 </button>
             </p>
@@ -22,25 +22,25 @@
         <h2 class="text-2xl md:text-3xl text-center font-bold text-sky-400 my-6 tracking-wider">Latest Draw Results</h2>
 
         <h3 class="text-base md:text-lg font-bold text-sky-400 my-3 uppercase tracking-wider">Digit Games</h3>
-        <div id="latestGridDigit" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6" style="min-height:120px">
-            <div class="text-slate-500 text-center col-span-full py-8 italic">Loading draw data...</div>
+        <div id="latestGridDigit" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 skeleton-grid-digit" aria-label="Latest digit game results" role="region">
+            <div class="text-slate-500 text-center col-span-full py-8 italic" aria-live="polite">Loading draw data...</div>
         </div>
 
         <h3 class="text-base md:text-lg font-bold text-sky-400 my-3 uppercase tracking-wider">Major Jackpots</h3>
-        <div id="latestGridMajor" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-6" style="min-height:200px">
-            <div class="text-slate-500 text-center col-span-full py-8 italic">Connecting to PCSO...</div>
+        <div id="latestGridMajor" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-6 skeleton-grid" aria-label="Latest major game results" role="region">
+            <div class="text-slate-500 text-center col-span-full py-8 italic" aria-live="polite">Connecting to PCSO...</div>
         </div>
 
-        <div class="bg-slate-800/50 rounded-3xl border border-slate-700 p-5 md:p-8 mb-6">
+        <div class="bg-slate-800/50 rounded-3xl border border-slate-700 p-5 md:p-8 mb-6" role="region" aria-label="Trend analysis section">
             <div class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
                 <div class="text-center sm:text-left">
                     <h3 class="text-xl font-bold text-white flex items-center gap-2">
-                        <span>🔍</span> Trend Watch
+                        <span aria-hidden="true">🔍</span> Trend Watch
                     </h3>
                     <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">Pattern Analysis</p>
                 </div>
                 <select id="trendGameSelect" aria-label="Select game for trend analysis"
-                    class="bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-4 py-2 text-sm font-bold outline-none cursor-pointer focus:ring-2 focus:ring-blue-500 transition-all">
+                    class="bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-4 py-2 text-sm font-bold outline-none cursor-pointer focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
                     <option value="6/58">Ultra Lotto 6/58</option>
                     <option value="6/55">Grand Lotto 6/55</option>
                     <option value="6/49">Super Lotto 6/49</option>
@@ -53,7 +53,7 @@
 
             <div id="dailyAnalysisBox" class="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-5 text-center mb-8">
                 <div class="flex items-center justify-center gap-2 mb-2">
-                    <span class="text-lg">💡</span>
+                    <span aria-hidden="true" class="text-lg">💡</span>
                     <h4 class="font-black text-blue-300 text-[10px] uppercase tracking-[0.2em]">Live Insights</h4>
                 </div>
                 <p id="dailyAnalysisText" class="text-sm text-slate-400 italic">
@@ -62,9 +62,9 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-red-500/5 border border-red-500/10 rounded-2xl p-6 transition-hover hover:bg-red-500/10">
+                <div class="bg-red-500/5 border border-red-500/10 rounded-2xl p-6 transition-colors hover:bg-red-500/10">
                     <div class="flex items-center justify-center gap-2 mb-4">
-                        <span class="text-2xl">🔥</span>
+                        <span aria-hidden="true" class="text-2xl">🔥</span>
                         <h4 class="font-bold text-red-400 uppercase text-xs tracking-widest">Hot Numbers</h4>
                     </div>
                     <p id="homeHotDesc" class="text-[10px] text-slate-500 text-center mb-4 uppercase">Most frequent in recent draws</p>
@@ -73,9 +73,9 @@
                     </div>
                 </div>
 
-                <div class="bg-cyan-500/5 border border-cyan-500/10 rounded-2xl p-6 transition-hover hover:bg-cyan-500/10">
+                <div class="bg-cyan-500/5 border border-cyan-500/10 rounded-2xl p-6 transition-colors hover:bg-cyan-500/10">
                     <div class="flex items-center justify-center gap-2 mb-4">
-                        <span class="text-2xl">❄️</span>
+                        <span aria-hidden="true" class="text-2xl">❄️</span>
                         <h4 class="font-bold text-cyan-400 uppercase text-xs tracking-widest">Cold Numbers</h4>
                     </div>
                     <p id="homeColdDesc" class="text-[10px] text-slate-500 text-center mb-4 uppercase">Longest overdue for a win</p>
