@@ -75,3 +75,32 @@ Stage Summary:
 - Site now has comprehensive reference content that AdSense reviewers look for
 - Search Console verification code confirmed correct
 - All changes committed and pushed to GitHub main branch
+---
+Task ID: 1
+Agent: Main Agent
+Task: Fix Lighthouse performance, accessibility, CLS, and SEO issues for Lottong Pinoy website
+
+Work Log:
+- Read all 18+ source files (index.php, CSS, JS modules, views, partials, .htaccess)
+- Analyzed Lighthouse report: Performance 48, Accessibility 66, CLS 0.194
+- Fixed GA4 loading - deferred via requestIdleCallback to prevent forced reflow (63ms reflow)
+- Fixed CLS - added explicit width/height to logo SVG, skeleton min-heights to dynamic grids
+- Fixed non-composited animations - replaced opacity pulse with transform-based hotPulse
+- Added will-change and contain properties for GPU compositing
+- Added prefers-reduced-motion media query for accessibility
+- Improved nav-tab contrast from #94a3b8 to #cbd5e1
+- Added skip-to-main-content link for keyboard navigation
+- Added sr-only utility class for screen reader text
+- Added aria-labels to all navigation tabs, buttons, form inputs
+- Added focus-visible/focus:ring styles to all interactive elements
+- Added role=dialog, aria-modal to insight modal
+- Added for/id label associations to calculator form inputs
+- Added aria-labels to blog article cards and footer external links
+- Added .htaccess GZIP compression, long-term cache headers (1yr for static), security headers
+- Updated CSS version numbers for cache busting (v1.6→v1.7, v1.5→v1.6, v1.7→v1.8)
+- Committed and pushed all changes to GitHub
+
+Stage Summary:
+- 13 files modified with 988 insertions, 803 deletions
+- All Lighthouse issues addressed: Performance, Accessibility, CLS, animations, caching
+- Pushed to GitHub: commit 6ea7e13
