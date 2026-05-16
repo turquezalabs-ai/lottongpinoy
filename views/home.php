@@ -22,12 +22,12 @@
         <h2 class="text-2xl md:text-3xl text-center font-bold text-sky-400 my-6 tracking-wider">Latest Draw Results</h2>
 
         <h3 class="text-base md:text-lg font-bold text-sky-400 my-3 uppercase tracking-wider">Digit Games</h3>
-        <div id="latestGridDigit" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div id="latestGridDigit" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6" style="min-height:120px">
             <div class="text-slate-500 text-center col-span-full py-8 italic">Loading draw data...</div>
         </div>
 
         <h3 class="text-base md:text-lg font-bold text-sky-400 my-3 uppercase tracking-wider">Major Jackpots</h3>
-        <div id="latestGridMajor" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
+        <div id="latestGridMajor" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-6" style="min-height:200px">
             <div class="text-slate-500 text-center col-span-full py-8 italic">Connecting to PCSO...</div>
         </div>
 
@@ -39,7 +39,7 @@
                     </h3>
                     <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">Pattern Analysis</p>
                 </div>
-                <select id="trendGameSelect"
+                <select id="trendGameSelect" aria-label="Select game for trend analysis"
                     class="bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-4 py-2 text-sm font-bold outline-none cursor-pointer focus:ring-2 focus:ring-blue-500 transition-all">
                     <option value="6/58">Ultra Lotto 6/58</option>
                     <option value="6/55">Grand Lotto 6/55</option>

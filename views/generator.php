@@ -64,49 +64,6 @@
             Use our independent algorithm to generate sequences based on statistical probability.
         </p>
     </div>
-
-    <!-- GENERATOR INTRODUCTION CONTENT -->
-    <div class="max-w-4xl mx-auto mb-10 space-y-6 px-4">
-        <div class="bg-slate-800/60 rounded-2xl border border-slate-700 p-6 md:p-8">
-            <h3 class="text-xl md:text-2xl font-black text-white mb-4">How the Lucky Number Generator Works</h3>
-            <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
-                The Lottong Pinoy Smart Generator uses historical draw data from PCSO games to produce number combinations based on statistical analysis. Unlike simple random number generators, our tool offers four distinct strategies — Hot, Cold, Mixed, and Random — each drawing from a different analytical approach. Hot numbers are those that have appeared most frequently in past draws, while Cold numbers are those that have been drawn the least often and may be statistically "overdue." The Mixed strategy blends both approaches for a balanced selection, and Random gives you a pure luck-of-the-draw combination with no statistical weighting.
-            </p>
-            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
-                For players who want even more combinations, our System Play option lets you pick 7 to 10 numbers, which the generator then arranges into all possible 6-number combinations — just like PCSO System Play at authorized outlets. This significantly increases your coverage of the number field, though it also increases your total ticket cost. Every generated combination is saved locally so you can review, compare, and track your selections over time.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
-                <h4 class="text-sm font-bold text-white mb-2">🔥 Hot Strategy</h4>
-                <p class="text-slate-400 text-xs leading-relaxed">This strategy prioritizes numbers that have been drawn most frequently in recent history. The theory behind playing hot numbers is that some numbers may appear more often due to statistical variance. While this does not guarantee future wins, many Filipino lotto players prefer to "ride the trend" by selecting numbers that have shown up consistently in past draws. Our algorithm ranks numbers by their historical frequency and selects the top performers for your combination.</p>
-            </div>
-            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
-                <h4 class="text-sm font-bold text-white mb-2">❄️ Cold Strategy</h4>
-                <p class="text-slate-400 text-xs leading-relaxed">The Cold strategy focuses on numbers that have appeared least frequently in historical draws. Some players believe that numbers which have not been drawn for a long time are "due" to appear — a concept known as the gambler's fallacy. While every draw is mathematically independent and past results do not affect future outcomes, the Cold strategy appeals to players who prefer to bet against the trend, hoping that underrepresented numbers will eventually catch up to their expected frequency.</p>
-            </div>
-            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
-                <h4 class="text-sm font-bold text-white mb-2">⚖️ Mixed Strategy</h4>
-                <p class="text-slate-400 text-xs leading-relaxed">The Mixed strategy offers the best of both worlds by alternating between hot and cold numbers in a single combination. This balanced approach ensures your selection includes both trending numbers and statistically overdue ones. Many experienced players prefer this method because it provides broader coverage across the number field rather than concentrating entirely on one extreme of the frequency spectrum. The generator alternates selections from the hot and cold pools to create a well-rounded set.</p>
-            </div>
-            <div class="bg-slate-800/60 rounded-xl border border-slate-700 p-5">
-                <h4 class="text-sm font-bold text-white mb-2">🎲 Random Strategy</h4>
-                <p class="text-slate-400 text-xs leading-relaxed">For players who believe that luck is the only true factor in lottery games, the Random strategy generates a completely unweighted selection. Every number in the game's range has an equal probability of being chosen, with no consideration given to historical frequency data. This is the purest form of number generation and mirrors the way actual PCSO draws work — each number has an identical and independent chance of being selected in every single draw.</p>
-            </div>
-        </div>
-
-        <div class="bg-green-500/10 border border-green-500/20 rounded-xl p-5">
-            <h4 class="text-sm font-bold text-green-400 mb-2">Understanding System Play</h4>
-            <p class="text-slate-300 text-xs leading-relaxed mb-3">
-                System Play is a PCSO feature that allows you to select more than 6 numbers, generating all possible 6-number combinations from your selection. For example, System 7 lets you choose 7 numbers, which creates 7 different combinations. System 8 creates 28 combinations, System 9 creates 84, and System 10 creates 210 combinations. While System Play increases your chances of winning by covering more number groupings, it also multiplies your ticket cost accordingly — each combination costs ₱20.00.
-            </p>
-            <p class="text-slate-400 text-xs leading-relaxed">
-                <strong class="text-slate-300">Important Reminder:</strong> Our generator is an independent analytical tool and is not affiliated with PCSO. Generated numbers are based on historical statistics and do not guarantee winning results. Lottery draws are random events. Please play responsibly and set a budget you can afford.
-            </p>
-        </div>
-    </div>
-
     <div class="flex flex-col lg:flex-row gap-6">
         <aside class="w-full lg:w-[320px] shrink-0">
             <div class="lg:sticky lg:top-6 bg-slate-800 rounded-2xl p-6 border border-slate-700 shadow-2xl">
@@ -135,7 +92,7 @@
 
                     <div id="systemPicksContainer" class="hidden mb-6 animate-fade-in">
                         <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">Picks</label>
-                        <select id="systemPicksSelect" class="select w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <select id="systemPicksSelect" aria-label="Select system picks" class="select w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="7">System 7</option>
                             <option value="8">System 8</option>
                             <option value="9">System 9</option>
@@ -148,7 +105,7 @@
 
                     <div>
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Select Game</label>
-                        <select id="genGameSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <select id="genGameSelect" aria-label="Select game for generator" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="6/58">Ultra Lotto 6/58</option>
                             <option value="6/55">Grand Lotto 6/55</option>
                             <option value="6/49">Super Lotto 6/49</option>
@@ -163,7 +120,7 @@
 
                     <div>
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Strategy</label>
-                        <select id="genStrategySelect" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <select id="genStrategySelect" aria-label="Select number generation strategy" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="hot">🔥 Hot Numbers (Frequent)</option>
                             <option value="cold">❄️ Cold Numbers (Overdue)</option>
                             <option value="mix">⚖️ Mixed (Balanced)</option>
@@ -288,6 +245,13 @@
         }
 
         isGenerating = true;
+
+        // Lazy-load html2canvas only when sharing
+        const html2canvas = await window.loadHtml2Canvas();
+        if (!html2canvas) {
+            isGenerating = false;
+            return alert("Could not load image generator. Please try again.");
+        }
 
         const wrapper = document.getElementById('screenshotWrapper');
         const target = document.getElementById('captureTarget');

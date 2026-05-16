@@ -16,6 +16,18 @@ import { initCalculator } from './modules/calculator.js';
 // Global State
 window.allData = [];
 
+// Lazy-load html2canvas only when needed (saves ~38KB initial load)
+window.loadHtml2Canvas = async function() {
+    if (window.html2canvas) return window.html2canvas;
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
+    return new Promise((resolve, reject) => {
+        script.onload = () => resolve(window.html2canvas);
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
+};
+
 document.addEventListener('DOMContentLoaded', async () => {
     // A. Start Navigation
     initNavigation();
@@ -69,7 +81,10 @@ function initNavigation() {
 
     // 1. Mobile Menu Toggle
     if (menuBtn) {
-        menuBtn.addEventListener('click', () => mainNav.classList.toggle('hidden'));
+        menuBtn.addEventListener('click', () => {
+            const isExpanded = mainNav.classList.toggle('hidden');
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+        });
     }
 
     // 2. Main Tab Click Logic

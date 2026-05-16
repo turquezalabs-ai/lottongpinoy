@@ -65,7 +65,7 @@
                     <!-- Game -->
                     <div>
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Select Game</label>
-                        <select id="analysisGameSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <select id="analysisGameSelect" aria-label="Select game for analysis" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="6/58">Ultra Lotto 6/58</option>
                             <option value="6/55">Grand Lotto 6/55</option>
                             <option value="6/49">Super Lotto 6/49</option>
@@ -83,15 +83,15 @@
                         <div>
                             <label class="block text-[12px] text-slate-500 mb-1">From</label>
                             <div class="grid grid-cols-2 gap-3">
-                                <select id="analysisFromYear" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
-                                <select id="analysisFromMonth" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
+                                <select id="analysisFromYear" aria-label="Analysis from year" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
+                                <select id="analysisFromMonth" aria-label="Analysis from month" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
                             </div>
                         </div>
                         <div>
                             <label class="block text-[12px] text-slate-500 mb-1">To</label>
                             <div class="grid grid-cols-2 gap-3">
-                                <select id="analysisToYear" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
-                                <select id="analysisToMonth" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
+                                <select id="analysisToYear" aria-label="Analysis to year" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
+                                <select id="analysisToMonth" aria-label="Analysis to month" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
                             </div>
                         </div>
                     </div>

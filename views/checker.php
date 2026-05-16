@@ -58,7 +58,7 @@
                     <!-- Game -->
                     <div>
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Select Game</label>
-                        <select id="checkGameSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <select id="checkGameSelect" aria-label="Select game for checker" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="6/58">Ultra Lotto 6/58</option>
                             <option value="6/55">Grand Lotto 6/55</option>
                             <option value="6/49">Super Lotto 6/49</option>
@@ -120,7 +120,7 @@
                     <!-- Sort Controls -->
                     <div class="flex items-center gap-2">
                         <span class="text-xs text-slate-500 uppercase hidden sm:block">Sort by:</span>
-                        <select id="resultSortSelect" class="bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-lg px-2 py-1 outline-none cursor-pointer focus:ring-1 focus:ring-blue-500">
+                        <select id="resultSortSelect" aria-label="Sort results by" class="bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-lg px-2 py-1 outline-none cursor-pointer focus:ring-1 focus:ring-blue-500">
                             <option value="date">Date (Newest)</option>
                             <option value="prize">Prize (Highest)</option>
                             <option value="winners">Winners (Most)</option>
