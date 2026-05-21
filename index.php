@@ -341,24 +341,29 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
 
-    <!-- CRITICAL CSS (Inlined to prevent render blocking) -->
+    <!-- CRITICAL CSS (Inlined to prevent render blocking + CLS prevention) -->
     <style>
         *,*::before,*::after{box-sizing:border-box}
         body{margin:0;font-family:'Inter',system-ui,-apple-system,sans-serif;background-color:#020617;color:#f1f5f9;line-height:1.5;overflow-x:hidden}
         .main-wrapper{max-width:1440px;margin:0 auto;padding:1rem;width:100%}
         .section-page{display:block;width:100%}
         .section-page.hidden{display:none}
-        .nav-tab{padding:.75rem 1.25rem;color:#94a3b8;border:none;border-bottom:2px solid transparent;cursor:pointer;background:none;font-size:.875rem;font-weight:500;transition:color .2s,border-color .2s}
+        .nav-tab{padding:.75rem 1.25rem;color:#cbd5e1;border:none;border-bottom:2px solid transparent;cursor:pointer;background:none;font-size:.875rem;font-weight:500;transition:color .2s,border-color .2s}
         .nav-tab:hover{color:#f1f5f9}
         .nav-tab.active{color:#38bdf8;border-bottom-color:#38bdf8}
         /* Skeleton placeholders to prevent CLS */
         .skeleton-grid{min-height:200px}
         .skeleton-grid-digit{min-height:120px}
+        /* Cookie banner - hidden by default, no CLS */
+        #cookieBanner{transform:translateY(100%);transition:transform .5s ease-out}
+        #cookieBanner.show{transform:translateY(0)}
         /* Screen reader only utility */
         .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
         /* Skip to content link for accessibility */
         .skip-link{position:absolute;top:-40px;left:0;background:#38bdf8;color:#020617;padding:8px 16px;z-index:10000;font-weight:700;font-size:.875rem;transition:top .2s}
         .skip-link:focus{top:0}
+        /* Composited-only transitions */
+        .transition-colors{transition:background-color .2s,color .2s,border-color .2s}
     </style>
 
     <!-- FONTS (Non-blocking with swap + reduced weight set) -->
@@ -366,19 +371,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"></noscript>
     
-    <!-- STYLESHEETS (Non-blocking) -->
-    <link rel="preload" as="style" href="css/styles.css?v=1.7">
-    <link rel="stylesheet" href="css/styles.css?v=1.7" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="css/styles.css?v=1.7"></noscript>
+    <!-- STYLESHEETS (Non-blocking with fallback) -->
+    <link rel="preload" as="style" href="css/styles.css?v=1.8">
+    <link rel="stylesheet" href="css/styles.css?v=1.8" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/styles.css?v=1.8"></noscript>
     
-    <link rel="preload" as="style" href="css/cards.css?v=1.6">
-    <link rel="stylesheet" href="css/cards.css?v=1.6" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="css/cards.css?v=1.6"></noscript>
+    <link rel="preload" as="style" href="css/cards.css?v=1.7">
+    <link rel="stylesheet" href="css/cards.css?v=1.7" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/cards.css?v=1.7"></noscript>
 
-    <!-- TAILWIND CSS (Production Play CDN with config to reduce unused CSS) -->
-    <script defer src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <!-- TAILWIND CSS (Deferred - config must come BEFORE the CDN script) -->
     <script>
-        // Tailwind config to reduce generated CSS and improve performance
+        // Tailwind config MUST load before the CDN script
         window.tailwind = window.tailwind || {};
         window.tailwind.config = {
             theme: {
@@ -388,12 +392,12 @@
                     }
                 }
             },
-            // Only scan visible content for unused class reduction
             content: {
                 files: ['./*.php', './views/*.php', './partials/*.php']
             }
         };
     </script>
+    <script defer src="https://cdn.tailwindcss.com?plugins=forms"></script>
 
 </head>
 
@@ -412,7 +416,7 @@
                 </button>
 
                 <a href="#" data-tab="results" class="footer-link flex items-center gap-2.5" aria-label="Lottong Pinoy Home">
-                   <img src="img/logo.svg" alt="Lottong Pinoy" class="h-9 md:h-12 w-auto" width="48" height="48" style="aspect-ratio:1/1;height:48px;width:48px;" loading="eager" decoding="async">
+                   <img src="img/logo.svg" alt="Lottong Pinoy" width="48" height="48" style="width:48px;height:48px;aspect-ratio:1/1;" loading="eager" fetchpriority="high">
                     <span class="text-xl md:text-2xl font-black text-white tracking-tight">
                         Lottong <span class="text-blue-400">Pinoy</span>
                     </span>
@@ -457,7 +461,7 @@
     <!-- COOKIE CONSENT BANNER with Google Consent Mode v2            -->
     <!-- Integrates with gtag consent API for GDPR/privacy compliance -->
     <!-- ============================================================ -->
-    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-700 shadow-2xl z-50 transition-transform duration-500 ease-out">
+    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-700 shadow-2xl z-50" style="transform:translateY(100%)">
         <div class="max-w-[1440px] mx-auto p-4 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="text-center md:text-left">
                 <p class="text-sm text-slate-300">
@@ -495,7 +499,7 @@
         </svg>
     </button>
 
-    <script type="module" src="js/app.js?v=1.8"></script>
+    <script type="module" src="js/app.js?v=1.9"></script>
 
     <!-- ============================================================ -->
     <!-- COOKIE CONSENT + GOOGLE CONSENT MODE v2 INTEGRATION          -->
@@ -561,6 +565,13 @@
                     banner.style.transform = 'translateY(100%)';
                     setTimeout(() => { banner.style.display = 'none'; }, 500);
                 }
+            }
+
+            // Show banner on page load (only if no consent choice made yet)
+            if (!consent) {
+                requestAnimationFrame(() => {
+                    if (banner) banner.classList.add('show');
+                });
             }
         })();
     </script>

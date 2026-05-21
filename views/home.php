@@ -39,7 +39,8 @@
                     </h3>
                     <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">Pattern Analysis</p>
                 </div>
-                <select id="trendGameSelect" aria-label="Select game for trend analysis"
+                <label for="trendGameSelect" class="sr-only">Select game for trend analysis</label>
+                <select id="trendGameSelect"
                     class="bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-4 py-2 text-sm font-bold outline-none cursor-pointer focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
                     <option value="6/58">Ultra Lotto 6/58</option>
                     <option value="6/55">Grand Lotto 6/55</option>

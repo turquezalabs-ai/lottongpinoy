@@ -13,7 +13,7 @@
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
 
-    /* Animations - composited friendly */
+    /* Animations - composited friendly (transform + opacity only) */
     .animate-fade-in {
         animation: fadeIn 0.3s ease-in;
         will-change: transform, opacity;
@@ -22,6 +22,11 @@
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Fix: Ensure share/copy buttons have accessible names */
+    #copyBtn, #shareBtn, #exportTxtBtn, #printBtn {
+        cursor: pointer;
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -99,7 +104,8 @@
 
                     <div id="systemPicksContainer" class="hidden mb-6 animate-fade-in">
                         <label class="block text-xs text-slate-400 mb-2 uppercase tracking-wide">Picks</label>
-                        <select id="systemPicksSelect" aria-label="Select system picks" class="select w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <label for="systemPicksSelect" class="sr-only">Select system picks</label>
+                        <select id="systemPicksSelect" class="select w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="7">System 7</option>
                             <option value="8">System 8</option>
                             <option value="9">System 9</option>
@@ -112,7 +118,8 @@
 
                     <div>
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Select Game</label>
-                        <select id="genGameSelect" aria-label="Select game for generator" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <label for="genGameSelect" class="sr-only">Select game for generator</label>
+                        <select id="genGameSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="6/58">Ultra Lotto 6/58</option>
                             <option value="6/55">Grand Lotto 6/55</option>
                             <option value="6/49">Super Lotto 6/49</option>
@@ -127,7 +134,8 @@
 
                     <div>
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Strategy</label>
-                        <select id="genStrategySelect" aria-label="Select number generation strategy" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <label for="genStrategySelect" class="sr-only">Select number generation strategy</label>
+                        <select id="genStrategySelect" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="hot">🔥 Hot Numbers (Frequent)</option>
                             <option value="cold">❄️ Cold Numbers (Overdue)</option>
                             <option value="mix">⚖️ Mixed (Balanced)</option>

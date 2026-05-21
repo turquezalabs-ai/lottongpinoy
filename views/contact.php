@@ -53,7 +53,8 @@
                 </div>
                 <div>
                     <label for="contactSubject" class="block text-xs font-bold text-slate-300 mb-1 uppercase tracking-wider">Subject</label>
-                    <select id="contactSubject" name="subject" aria-label="Select message subject"
+                    <label for="contactSubject" class="sr-only">Select message subject</label>
+                    <select id="contactSubject" name="subject"
                         class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer focus:ring-2 focus:ring-blue-500">
                         <option value="general">General Inquiry</option>
                         <option value="data">Data Accuracy Report</option>

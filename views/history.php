@@ -79,7 +79,8 @@
                     <!-- Game -->
                     <div>
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Select Game</label>
-                        <select id="gameSelect" aria-label="Select game" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <label for="gameSelect" class="sr-only">Select game</label>
+                        <select id="gameSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option disabled>Loading...</option>
                         </select>
                     </div>
@@ -87,7 +88,8 @@
                     <!-- Schedule -->
                     <div id="scheduleContainer" class="hidden">
                         <label class="block text-[10px] uppercase tracking-widest text-slate-500 font-black mb-2 ml-1">Schedule</label>
-                        <select id="scheduleSelect" aria-label="Select draw schedule" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
+                        <label for="scheduleSelect" class="sr-only">Select draw schedule</label>
+                        <select id="scheduleSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-100 rounded-xl px-4 py-3 text-sm font-bold outline-none cursor-pointer">
                             <option value="all">All Schedules</option>
                             <option value="11AM">11:00 AM</option>
                             <option value="4PM">4:00 PM</option>
@@ -100,15 +102,19 @@
                         <div>
                             <label class="block text-[12px] text-slate-500 mb-1">From</label>
                             <div class="grid grid-cols-2 gap-3">
-                                <select id="fromYearSelect" aria-label="From year" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
-                                <select id="fromMonthSelect" aria-label="From month" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
+                                <label for="fromYearSelect" class="sr-only">From year</label>
+                                <select id="fromYearSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
+                                <label for="fromMonthSelect" class="sr-only">From month</label>
+                                <select id="fromMonthSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
                             </div>
                         </div>
                         <div>
                             <label class="block text-[12px] text-slate-500 mb-1">To</label>
                             <div class="grid grid-cols-2 gap-3">
-                                <select id="toYearSelect" aria-label="To year" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
-                                <select id="toMonthSelect" aria-label="To month" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
+                                <label for="toYearSelect" class="sr-only">To year</label>
+                                <select id="toYearSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
+                                <label for="toMonthSelect" class="sr-only">To month</label>
+                                <select id="toMonthSelect" class="w-full bg-slate-900 border border-slate-700 text-slate-200 rounded-xl px-3 py-2.5 text-sm outline-none cursor-pointer"></select>
                             </div>
                         </div>
                     </div>

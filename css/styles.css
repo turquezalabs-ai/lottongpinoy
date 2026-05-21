@@ -1,4 +1,4 @@
-/* css/styles.css */
+/* css/styles.css v1.8 */
 
 :root {
     --bg: #020617;
@@ -114,10 +114,10 @@ body {
 /* Navigation */
 .nav-tab {
     padding: 0.75rem 1.25rem;
-    color: #cbd5e1; /* Improved from #94a3b8 for better contrast against dark bg */
+    color: #cbd5e1; /* WCAG AA compliant against #020617 */
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    transition: color 0.2s, border-color 0.2s;
+    transition: color 0.2s, border-color 0.2s; /* Composited-friendly: only color props */
     background: none;
     border-top: none;
     border-left: none;
@@ -174,7 +174,7 @@ body {
     border-radius: 0.5rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -192,6 +192,7 @@ body {
     opacity: 0.9;
     transform: translateY(-1px);
     will-change: transform;
+    /* Composited: only transform */
 }
 
 .btn:focus-visible {
@@ -236,7 +237,7 @@ body {
     background: var(--bg-card);
     border: 1px solid var(--border);
     color: var(--text);
-    transition: all 0.15s ease;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .num-ball:hover {
@@ -245,11 +246,11 @@ body {
 
 .num-ball.selected {
     background: #eab308;
-    color: #422006;
+    color: #422006; /* WCAG AA compliant contrast against yellow */
     border-color: #facc15;
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(234, 179, 8, 0.5);
-    will-change: transform;
+    will-change: transform; /* Composited animation */
 }
 
 .num-ball:focus-visible {
@@ -270,13 +271,12 @@ body {
 /* PWA & Cookie Banners */
 #cookieBanner {
     transform: translateY(100%);
-    /* Hidden by default (off screen) */
-    /* Ensure transition is smooth - only transform for composited animation */
+    /* Hidden by default (off screen) - no CLS impact */
     transition: transform 0.5s ease-out;
-    will-change: transform;
+    will-change: transform; /* Composited animation */
 }
 
-/* Class to show the banner */
+/* Class to show the banner - triggered via JS requestAnimationFrame */
 #cookieBanner.show {
     transform: translateY(0);
 }
